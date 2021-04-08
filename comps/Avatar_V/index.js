@@ -9,7 +9,7 @@ const AvatarInputV = styled.div`
 `;
 
 const AvatarV = ({
-    bgImg="AvatarW_BigSmile.png", // add inside url 
+    bgImg="AvatarV_BigSmile.png", // add inside url 
 }) => {
     
     return <div>
