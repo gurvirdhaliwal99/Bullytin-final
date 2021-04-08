@@ -11,6 +11,7 @@ const LogoCircle = styled.div`
     width: 75px;
     border-radius: 50%;
 `;
+//circle logo does not need diff variations at ths time. 
 
 
 const Circle = () => {
