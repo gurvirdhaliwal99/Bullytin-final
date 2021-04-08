@@ -9,6 +9,7 @@ const TextBox = styled.div`
     width: ${props=>props.width};
     border: ${props=>props.borderstyle};
     border-radius: 15px;
+    margin-bottom: 100px;
 `;
 
 const BoxBody = styled.p`

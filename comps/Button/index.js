@@ -8,18 +8,20 @@ const ButtonInput = styled.button`
     color:${props=>props.color};
     border-radius: 10px;
     border-color: grey;
-    padding: 10px 50px;
+    padding: ${props=>props.padding};
     font-size: 15px;
     text-align: center;
+    margin:5px;
 `;
 
 const Button = ({
     text="Test Button",
-    color="white"
+    color="white",
+    padding="10px 50px"
 }) => {
 
     return <div>
-        <ButtonInput color={color}>
+        <ButtonInput color={color} padding={padding}>
             {text}
         </ButtonInput>
     </div>
