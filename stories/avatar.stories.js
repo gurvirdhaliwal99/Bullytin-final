@@ -10,6 +10,13 @@ export default {
 export const AvatarWendy = () => <AvatarW />
 export const AvatarVince = () => <AvatarV />
 
+export const AvatarWendySmall = () => (
+    <AvatarW width="100px" bsize="100px" height="140px"/>
+);
+export const AvatarVinceSmall = () => (
+    <AvatarV width="150px" bsize="150px" height="140px"/>
+);
+
 export const AvatarWendyE = () => (
     <AvatarW bgImg="AvatarW_Explaining.png"/>
 );
