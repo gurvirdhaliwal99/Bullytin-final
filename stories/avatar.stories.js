@@ -9,3 +9,10 @@ export default {
 
 export const AvatarWendy = () => <AvatarW />
 export const AvatarVince = () => <AvatarV />
+
+export const AvatarWendyE = () => (
+    <AvatarW bgImg="AvatarW_Explaining.png"/>
+);
+export const AvatarVinceE = () => (
+    <AvatarV bgImg="AvatarV_Explaining.png"/>
+);

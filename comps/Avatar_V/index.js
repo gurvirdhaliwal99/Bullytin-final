@@ -4,14 +4,16 @@ import styled from 'styled-components';
 const AvatarInputV = styled.div`
     width: 200px;
     height: 191.26px;
-    background-image: url("AvatarV_BigSmile.png");
+    background-image: url(${props=>props.bgImg});
     background-size: 200px;
 `;
 
-const AvatarV = () => {
+const AvatarV = ({
+    bgImg="AvatarW_BigSmile.png", // add inside url 
+}) => {
     
     return <div>
-        <AvatarInputV>
+        <AvatarInputV bgImg={bgImg}>
             
         </AvatarInputV>
     </div>
