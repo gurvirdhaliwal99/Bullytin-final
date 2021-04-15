@@ -11,6 +11,9 @@ const BackButton = styled.div`
     height: 60px;
     width: 60px;
     margin-bottom: 100px;
+    position: relative;
+    right:200px;
+    top:50px;
 `;
 
 

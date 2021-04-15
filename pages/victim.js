@@ -7,6 +7,7 @@ import AvatarW from "../comps/Avatar_W/index.js";
 import Back from "../comps/Backbutton/index.js";
 import Step from "../comps/Step/index.js";
 import styled from "styled-components";
+import React, {useState} from "react";
 
 
 const Container = styled.div`
@@ -14,7 +15,7 @@ const Container = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction: column;
-  background-image: linear-gradient(#5097D9, White);
+  background-image: url("Blue_bg_Graphic.svg");
   background-color:#5097D9;
   height: 100vh;
 `;
@@ -45,20 +46,22 @@ export default function Home() {
     <Container>
       <Header>
         <Back></Back>
-        <Circle></Circle>
+        <Circle right="20px"></Circle>
       </Header>
 
       <Body>
         <Step></Step>
-        <Box border="4px solid #DC7F9B" text="In what way were you bullied?"></Box>
+        <AvatarW></AvatarW>
+        <Box text="We understand your situation and thank you for seeking help. Getting bullied is never easy but there are things you can do about it." height="130px" width="480px" bottom="50px"></Box>
+        <AvatarV bottom="100px"></AvatarV>
+        <Box text="What type of bullying did you experience?" height="100px" width="400px" bottom="170px"></Box>
       </Body>
 
       <Buttons>
-        <Button text="Cyberbullying" color="white" padding="10px 95px"></Button>
-        <Button text="Verbal Bullying" color="white" padding="10px 93px"></Button>
-        <Button text="Physical Bullying" color="white" padding="10px 90px"></Button>
+        <Button text="Cyberbullying" color="white" padding="10px 105px" bottom="150px"></Button>
+        <Button text="Verbal Bullying" color="white" padding="10px 97px" bottom="150px"></Button>
+        <Button text="Physical Bullying" color="white" padding="10px 90px" bottom="150px"></Button>
       </Buttons>
-
     </Container>
     
   )

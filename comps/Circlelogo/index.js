@@ -11,14 +11,19 @@ const LogoCircle = styled.div`
     width: 75px;
     border-radius: 50%;
     margin-bottom: 100px;
+    position: relative;
+    top:50px;
+    right:${props=>props.right};
 `;
 //circle logo does not need diff variations at ths time. 
 
 
-const Circle = () => {
-
+const Circle = ({
+    right="0px"
+}) => {
+    
     return <div>
-        <LogoCircle>
+        <LogoCircle right={right}>
         </LogoCircle>
     </div>
 }

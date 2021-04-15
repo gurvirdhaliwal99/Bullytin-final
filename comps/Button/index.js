@@ -13,17 +13,24 @@ const ButtonInput = styled.button`
     font-size: 25px;
     text-align: center;
     margin:5px;
+    position: relative;
+    bottom: ${props=>props.bottom};
+    right: ${props=>props.right};
+    left: ${props=>props.left};
 `;
 
 const Button = ({
     text="Test Button",
     color="white",
     padding="10px 50px",
+    bottom="0px",
+    left="0px",
+    right="0px",
     routeTo="/victim"
 }) => {
     const router = useRouter();
     return <div>
-        <ButtonInput color={color} padding={padding} onClick={()=>router.push(routeTo)}>
+        <ButtonInput color={color} padding={padding} bottom={bottom} right={right} left={left} onClick={()=>router.push(routeTo)}>
             {text}
         </ButtonInput>
     </div>

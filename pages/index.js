@@ -15,7 +15,7 @@ const Container = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction: column;
-  background-image: linear-gradient(#DC7F9B, White);
+  background-image: url("Pink_bg_Graphic.svg");
   background-color:#DC7F9B;
   height: 100vh;
 `;
@@ -49,14 +49,15 @@ export default function Home() {
       </Header>
 
       <Body>
-        <Box></Box>
+        <Box text="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="150px" width="300px"></Box>
+        <Box text="Have you recently witnessed or have been a victim of bullying?" height="100px" width="300px"></Box>
       </Body>
 
       <Buttons>
-        <AvatarW ></AvatarW>
-        <Button text="Bystander" color="#DC7F9B" padding="10px 75px" routeTo="/bystander"></Button>
-        <AvatarV></AvatarV>
-        <Button text="Victim" color="#7CB2E3" padding="10px 90px"></Button>
+        <AvatarW bottom="75px" ></AvatarW>
+        <Button text="Bystander" color="#DC7F9B" padding="20px 105px" bottom="125px" right="100px" routeTo="/bystander"></Button>
+        <AvatarV bottom="95px"></AvatarV>
+        <Button text="Victim" color="#7CB2E3" padding="20px 120px" bottom="150px" left="100px"></Button>
       </Buttons>
 
     </Container>
