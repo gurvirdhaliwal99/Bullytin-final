@@ -23,7 +23,7 @@ const Circle = ({
     right="0px",
     routerBack="/index"
 }) => {
-    
+    const router = useRouter();
     return <div>
         <LogoCircle right={right} onClick={()=>router.push(routerBack)}>
         </LogoCircle>
