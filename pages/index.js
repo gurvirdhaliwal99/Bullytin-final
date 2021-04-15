@@ -24,6 +24,10 @@ export default function Home() {
       <Circle> </Circle>
       </div>
 
+      <div className="AvatarW">
+        <AvatarW></AvatarW>
+      </div>
+
       <div className="body">
         <Box></Box>
       </div>
