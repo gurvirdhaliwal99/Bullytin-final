@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from "next/router";
 
 const LogoCircle = styled.div`
     display: flex;
@@ -19,11 +20,12 @@ const LogoCircle = styled.div`
 
 
 const Circle = ({
-    right="0px"
+    right="0px",
+    routerBack="/index"
 }) => {
     
     return <div>
-        <LogoCircle right={right}>
+        <LogoCircle right={right} onClick={()=>router.push(routerBack)}>
         </LogoCircle>
     </div>
 }
