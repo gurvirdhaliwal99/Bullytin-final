@@ -52,9 +52,9 @@ export default function Home() {
       <Body>
         <Step></Step>
         <AvatarW></AvatarW>
-        <Box text="We understand your situation and thank you for seeking help. Getting bullied is never easy but there are things you can do about it." height="130px" width="480px" bottom="50px"></Box>
+        <Box text="We understand your situation and thank you for seeking help. Getting bullied is never easy but there are things you can do about it." height="130px" width="480px" bottom="50px" border="4px solid #DC7F9B"></Box>
         <AvatarV bottom="100px"></AvatarV>
-        <Box text="What type of bullying did you experience?" height="100px" width="400px" bottom="170px"></Box>
+        <Box text="What type of bullying did you experience?" height="100px" width="400px" bottom="170px" border="4px solid #DC7F9B"></Box>
       </Body>
 
       <Buttons>
