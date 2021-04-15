@@ -9,7 +9,6 @@ import Step from "../comps/Step/index.js";
 import styled from "styled-components";
 
 
-
 const Container = styled.div`
   display:flex;
   justify-content:center;
@@ -45,18 +44,19 @@ export default function Home() {
   return (
     <Container>
       <Header>
+        <Back></Back>
         <Circle></Circle>
       </Header>
 
       <Body>
-        <Box></Box>
+        <Step></Step>
+        <Box text="What type of bullying did you observe?"></Box>
       </Body>
 
       <Buttons>
-        <AvatarW ></AvatarW>
-        <Button text="Bystander" color="#DC7F9B" padding="10px 75px" routeTo="/bystander"></Button>
-        <AvatarV></AvatarV>
-        <Button text="Victim" color="#7CB2E3" padding="10px 90px"></Button>
+        <Button text="Cyberbullying" color="white" padding="10px 95px"></Button>
+        <Button text="Verbal Bullying" color="white" padding="10px 93px"></Button>
+        <Button text="Physical Bullying" color="white" padding="10px 90px"></Button>
       </Buttons>
 
     </Container>
