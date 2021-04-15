@@ -55,7 +55,7 @@ export default function Home() {
 
       <Buttons>
         <AvatarW bottom="75px" ></AvatarW>
-        <Button text="Bystander" color="#DC7F9B" padding="20px 105px" bottom="125px" right="100px" routeTo="/bystander"></Button>
+        <Button text="Bystander" color="#DC7F9B" padding="20px 105px" bottom="125px" right="110px" routeTo="/bystander"></Button>
         <AvatarV bottom="95px"></AvatarV>
         <Button text="Victim" color="#7CB2E3" padding="20px 120px" bottom="150px" left="100px"></Button>
       </Buttons>

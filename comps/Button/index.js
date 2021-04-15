@@ -15,7 +15,7 @@ const ButtonInput = styled.button`
     margin:5px;
     position: relative;
     bottom: ${props=>props.bottom};
-    right: ${props=>props.right};
+    margin-right: ${props=>props.right};
     left: ${props=>props.left};
 `;
 

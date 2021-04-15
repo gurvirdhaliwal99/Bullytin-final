@@ -46,7 +46,7 @@ export default function Home() {
     <Container>
       <Header>
         <Back></Back>
-        <Circle right="20px"></Circle>
+        <Circle right="30px"></Circle>
       </Header>
 
       <Body>
