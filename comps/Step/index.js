@@ -7,6 +7,7 @@ const StepNumber = styled.div`
     text-align: center;
     height: 40px;
     width: 100px;
+    padding-bottom:70px;
 `;
 
 const StepText = styled.p`

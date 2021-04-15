@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from "next/router";
 
 const BackButton = styled.div`
     display: flex;
@@ -14,10 +15,12 @@ const BackButton = styled.div`
 
 
 
-const Back = () => {
-
+const Back = ({
+    routerBack="/index"
+}) => {
+    const router = useRouter();
     return <div>
-        <BackButton>
+        <BackButton onClick={()=>router.push(routerBack)}>
         </BackButton>
     </div>
 }
