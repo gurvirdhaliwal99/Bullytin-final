@@ -21,7 +21,7 @@ const LogoCircle = styled.div`
 
 const Circle = ({
     right="0px",
-    routerBack="/index"
+    routerBack="/"
 }) => {
     const router = useRouter();
     return <div>
