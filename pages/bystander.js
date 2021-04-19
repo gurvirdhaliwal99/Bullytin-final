@@ -16,14 +16,17 @@ const Container = styled.div`
   align-items:center;
   flex-direction: column;
   background-image: url("Pink_bg_Graphic.svg");
+  background-repeat: no-repeat;
+  background-size: 100vh;
   background-color:#DC7F9B;
   height: 100vh;
-`;
+`;  
 
 const Header = styled.div`
   display:flex;
-  justify-content:center;
-  align-items:center;
+  position: relative;
+  top: -10px;
+  left:0px;
   flex-direction: row;
 `;
 
@@ -32,6 +35,9 @@ const Body = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction: column;
+  position: relative;
+  top: 200px;
+  left:0px;
 `;
 
 const Buttons = styled.div`
@@ -39,6 +45,8 @@ const Buttons = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction: column;
+  position: relative;
+  top: 80px;
 `;
 
 export default function Home() {
@@ -46,21 +54,21 @@ export default function Home() {
     <Container>
       <Header>
         <Back></Back>
-        <Circle right="30px"></Circle>
+        <Circle right="25px"></Circle>
       </Header>
 
       <Body>
         <Step></Step>
-        <AvatarW></AvatarW>
-        <Box text="Thank you for not being a bystander. The best thing you can do is try to help the person being bullied." height="100px" width="450px" bottom="50px"></Box>
-        <AvatarV bottom="100px"></AvatarV>
-        <Box text="What type of bullying did you witness?" height="100px" width="400px" bottom="170px"></Box>
+        <Box text="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" bottom="150px"></Box>
+        <AvatarW height="140px" width="100px" bsize="100px" right="100px" bottom="170px"></AvatarW>
+        <Box text="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px" bottom="200px"></Box>
       </Body>
 
       <Buttons>
-        <Button text="Cyberbullying" color="white" padding="10px 105px" bottom="150px"></Button>
-        <Button text="Verbal Bullying" color="white" padding="10px 97px" bottom="150px"></Button>
-        <Button text="Physical Bullying" color="white" padding="10px 90px" bottom="150px"></Button>
+        <Button bottom="60px"></Button>
+        <Button bottom="60px"></Button>
+        <Button bottom="60px"></Button>
+
       </Buttons>
 
     </Container>

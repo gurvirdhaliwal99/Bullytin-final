@@ -10,10 +10,9 @@ const BackButton = styled.div`
     background-size: 60px, 60px;
     height: 60px;
     width: 60px;
-    margin-bottom: 100px;
     position: relative;
-    right:200px;
-    top:50px;
+    left: -100px;
+    top: 5px;
 `;
 
 

@@ -24,12 +24,10 @@ const Container = styled.div`
 
 const Header = styled.div`
   display:flex;
-  justify-content:center;
-  align-items:center;
+  position: relative;
+  top: 20px;
+  left:0px;
   flex-direction: row;
-  background-color: green;
-
-
 `;
 
 const Body = styled.div`
@@ -37,6 +35,9 @@ const Body = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction: column;
+  position: relative;
+  top: 120px;
+  left:0px;
 `;
 
 const Buttons = styled.div`
@@ -44,6 +45,8 @@ const Buttons = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction: column;
+  position: relative;
+  top: 80px;
 `;
 
 export default function Home() {
@@ -54,15 +57,15 @@ export default function Home() {
       </Header>
 
       <Body>
-        <Box text="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="150px" width="300px"></Box>
-        <Box text="Have you recently witnessed or have been a victim of bullying?" height="100px" width="300px"></Box>
+        <Box text="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" bottom="-20px"></Box>
+        <Box text="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px"></Box>
       </Body>
 
       <Buttons>
-        <AvatarW bottom="75px" ></AvatarW>
-        <Button text="Bystander" color="#DC7F9B" padding="20px 105px" bottom="125px" right="50px" routeTo="/bystander"></Button>
-        <AvatarV bottom="95px"></AvatarV>
-        <Button text="Victim" color="#7CB2E3" padding="20px 120px" bottom="150px" left="100px"></Button>
+        <AvatarW height="140px" width="100px" bsize="100px" right="100px"></AvatarW>
+        <Button text="Bystander" right="75px"  bottom="50px" color="#DC7F9B"   routeTo="/bystander"></Button>
+        <AvatarV height="140px" width="140px" bsize="140px" left="90px" bottom="50px"></AvatarV>
+        <Button text="Victim" padding="10px 70px" bottom="100px" right="-70px" color="#7CB2E3"  ></Button>
       </Buttons>
 
     </Container>
