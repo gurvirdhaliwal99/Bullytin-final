@@ -6,6 +6,7 @@ const AvatarInputV = styled.div`
     height: ${props=>props.height}; 
     background-image: url(${props=>props.bgImg});
     background-size: ${props=>props.bsize};
+    background-repeat: no-repeat;
     position: relative;
     left: ${props=>props.left};
     bottom: ${props=>props.bottom};
