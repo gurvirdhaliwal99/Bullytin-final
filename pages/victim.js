@@ -10,23 +10,29 @@ import styled from "styled-components";
 import React, {useState} from "react";
 
 
+const OuterContainer = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+`;
+
 const Container = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
   flex-direction: column;
-  background-image: url("BG_Blue.png"); 
+  background-image: url("BG_Blue.png");
   background-repeat: no-repeat;
-  background-size: 50vh;
+  background-size: cover;
   background-color:#88BEE7;
   height: 100vh;
+  width: 100vw;
 `;  
 
 const Header = styled.div`
   display:flex;
   position: relative;
-  top: -10px;
-  left:0px;
+  bottom: 3.5vh
   flex-direction: row;
 `;
 
@@ -36,8 +42,7 @@ const Body = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  top: 200px;
-  left:0px;
+  top: 25vh;
 `;
 
 const Buttons = styled.div`
@@ -46,32 +51,34 @@ const Buttons = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  top: 80px;
+  bottom: -0.4vh;
 `;
 
 export default function Home() {
   return (
-    <Container>
-      <Header>
-        <Back></Back>
-        <Circle right="25px"></Circle>
-      </Header>
+    <OuterContainer>
+      <Container>
+        <Header>
+          <Back top="1vh" left="-20vw"></Back>
+          <Circle right="25px"></Circle>
+        </Header>
 
-      <Body>
-        <Step></Step>
-        <Box text="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" bottom="150px"></Box>
-        <AvatarW height="140px" width="100px" bsize="100px" right="100px" bottom="170px"></AvatarW>
-        <Box text="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px" bottom="200px"></Box>
-      </Body>
+        <Body>
+          <Step bottom="22vh"></Step>
+          <Box text="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" border="4px solid #DC7F9B" bottom="150px"></Box>
+          <AvatarV height="140px" width="160px" bsize="160px" left="-50%" bottom="120%"></AvatarV>
+          <Box text="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px" border="4px solid #DC7F9B" bottom="26vh"></Box>
+        </Body>
 
-      <Buttons>
-        <Button bottom="60px"></Button>
-        <Button bottom="60px"></Button>
-        <Button bottom="60px"></Button>
+        <Buttons>
+          <Button bottom="2vh"></Button>
+          <Button bottom="2vh"></Button>
+          <Button bottom="2vh"></Button>
 
-      </Buttons>
+        </Buttons>
 
-    </Container>
+      </Container>
+    </OuterContainer>
     
   )
 }

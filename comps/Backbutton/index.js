@@ -11,18 +11,20 @@ const BackButton = styled.div`
     height: 60px;
     width: 60px;
     position: relative;
-    left: -100px;
-    top: 5px;
+    left: ${props=>props.left};
+    top: ${props=>props.top};
 `;
 
 
 
 const Back = ({
-    routerBack="/"
+    routerBack="/",
+    left="0px",
+    top="0px"
 }) => {
     const router = useRouter();
     return <div>
-        <BackButton onClick={()=>router.push(routerBack)}>
+        <BackButton onClick={()=>router.push(routerBack)} top={top} left={left}>
         </BackButton>
     </div>
 }

@@ -8,7 +8,7 @@ const TextBox = styled.div`
     background-color: #e5e5e5;
     height: ${props=>props.height};
     width: ${props=>props.width};
-    border: ${props=>props.borderstyle};
+    border: ${props=>props.border};
     border-radius: 15px;
     margin-bottom: 50px;    
     position: relative;
@@ -33,7 +33,7 @@ const Box = ({
 }) => {
 
     return <div>
-            <TextBox borderstyle={border} height={height} width={width} bottom={bottom} left={left}>
+            <TextBox border={border} height={height} width={width} bottom={bottom} left={left}>
                 <BoxBody>{text}</BoxBody>
             </TextBox>
         </div>

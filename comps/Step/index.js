@@ -8,7 +8,7 @@ const StepNumber = styled.div`
     height: 40px;
     width: 200px;
     position: relative;
-    top: -200px;
+    bottom: ${props=>props.bottom};
 `;
 
 const StepText = styled.p`
@@ -22,10 +22,11 @@ const StepText = styled.p`
 
 const Step = ({
     text="Step 1 of 5",
+    bottom="0vh"
 }) => {
 
     return <div>
-        <StepNumber>
+        <StepNumber bottom={bottom}>
             <StepText>{text}</StepText>
         </StepNumber>
     </div>
