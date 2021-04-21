@@ -15,10 +15,10 @@ const Container = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction: column;
-  background-image: url("Blue_bg_Graphic.svg");
+  background-image: url("BG_Blue.png"); 
   background-repeat: no-repeat;
-  background-size: 100vh;
-  background-color:#95C9FA;
+  background-size: 50vh;
+  background-color:#88BEE7;
   height: 100vh;
 `;  
 

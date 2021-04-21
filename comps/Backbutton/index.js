@@ -18,7 +18,7 @@ const BackButton = styled.div`
 
 
 const Back = ({
-    routerBack="/index"
+    routerBack="/"
 }) => {
     const router = useRouter();
     return <div>

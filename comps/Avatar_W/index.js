@@ -13,7 +13,7 @@ const AvatarInputW = styled.div`
 `;
 
 const AvatarW = ({
-    bgImg="AvatarW_BigSmile.png", // add inside url
+    bgImg="AvatarW_BigSmile.png", //inside url
     width="150px",
     height="200px",
     bsize="150px",

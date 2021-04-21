@@ -11,21 +11,21 @@ import React, {useState} from "react";
 
 
 const Container = styled.div`
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction: column;
-  background-image: url("Pink_bg_Graphic.svg");
-  background-repeat: no-repeat;
-  background-size: 100vh;
-  background-color:#DC7F9B;
-  height: 100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction: column;
+background-image: url("BG_Pink.png");
+background-repeat: no-repeat;
+background-size: 50vh;
+background-color:#DC7F9B;
+height: 100vh;
 `;  
 
 const Header = styled.div`
   display:flex;
   position: relative;
-  top: -10px;
+  top: 0px;
   left:0px;
   flex-direction: row;
 `;
@@ -46,7 +46,7 @@ const Buttons = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  top: 80px;
+  top: 50px;
 `;
 
 export default function Home() {
@@ -54,14 +54,14 @@ export default function Home() {
     <Container>
       <Header>
         <Back></Back>
-        <Circle right="25px"></Circle>
+        <Circle right="25px" routeTo="/"></Circle>
       </Header>
 
       <Body>
         <Step></Step>
-        <Box text="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" bottom="150px"></Box>
-        <AvatarW height="140px" width="100px" bsize="100px" right="100px" bottom="170px"></AvatarW>
-        <Box text="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px" bottom="200px"></Box>
+        <Box text="Thank you for not being a bystander. The best thing you can do is try to help the person being bullied." height="140px" width="300px" bottom="150px"></Box>
+        <AvatarW bgImg="AvatarW_Sus.png" height="140px" width="100px" bsize="100px" right="100px" bottom="180px"></AvatarW>
+        <Box text="What type of bullying did you witness?" height="90px" width="300px" bottom="220px"></Box>
       </Body>
 
       <Buttons>
