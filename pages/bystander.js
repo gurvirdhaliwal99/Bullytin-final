@@ -10,24 +10,30 @@ import styled from "styled-components";
 import React, {useState} from "react";
 
 
+const OuterContainer = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+`;
+
 const Container = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
   flex-direction: column;
-  background-image: url("Pink_bg_Graphic.svg");
+  background-image: url("BG_Pink.png");
   background-repeat: no-repeat;
-  background-size: 100vh;
+  background-size: cover;
   background-color:#DC7F9B;
   height: 100vh;
+  width: 100vw;
 `;  
 
 const Header = styled.div`
   display:flex;
+  flex-direction: column;
   position: relative;
-  top: -10px;
-  left:0px;
-  flex-direction: row;
+  bottom: 3.5vh;
 `;
 
 const Body = styled.div`
@@ -36,8 +42,7 @@ const Body = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  top: 200px;
-  left:0px;
+  top: 22vh;
 `;
 
 const Buttons = styled.div`
@@ -46,32 +51,34 @@ const Buttons = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  top: 80px;
+  bottom: 3vh;
 `;
 
 export default function Home() {
   return (
-    <Container>
-      <Header>
-        <Back></Back>
-        <Circle right="25px"></Circle>
-      </Header>
+    <OuterContainer>
+      <Container>
+        <Header>
+          <Back top="8.7vh" left="-28vw"></Back>
+          <Circle routeTo="/"></Circle>
+        </Header>
 
-      <Body>
-        <Step></Step>
-        <Box text="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" bottom="150px"></Box>
-        <AvatarW height="140px" width="100px" bsize="100px" right="100px" bottom="170px"></AvatarW>
-        <Box text="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px" bottom="200px"></Box>
-      </Body>
+        <Body>
+          <Step bottom="22vh"></Step>
+          <Box text="Thank you for not being a bystander. The best thing you can do is try to help the person being bullied." height="140px" width="300px" bottom="150px"></Box>
+          <AvatarW bgImg="AvatarW_Sus.png" height="140px" width="100px" bsize="100px" right="80%" bottom="120%"></AvatarW>
+          <Box text="What type of bullying did you witness?" height="90px" width="300px" bottom="26vh"></Box>
+        </Body>
 
-      <Buttons>
-        <Button bottom="60px"></Button>
-        <Button bottom="60px"></Button>
-        <Button bottom="60px"></Button>
+        <Buttons>
+          <Button bottom="2vh"></Button>
+          <Button bottom="2vh"></Button>
+          <Button bottom="2vh"></Button>
 
-      </Buttons>
+        </Buttons>
 
-    </Container>
+      </Container>
+    </OuterContainer>
     
   )
 }

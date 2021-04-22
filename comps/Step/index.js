@@ -6,13 +6,15 @@ const StepNumber = styled.div`
     justify-content: center;
     text-align: center;
     height: 40px;
-    width: 100px;
+    width: 200px;
     position: relative;
-    top: -200px;
+    bottom: ${props=>props.bottom};
 `;
 
 const StepText = styled.p`
     font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
 
 `;
 
@@ -20,10 +22,11 @@ const StepText = styled.p`
 
 const Step = ({
     text="Step 1 of 5",
+    bottom="0vh"
 }) => {
 
     return <div>
-        <StepNumber>
+        <StepNumber bottom={bottom}>
             <StepText>{text}</StepText>
         </StepNumber>
     </div>
