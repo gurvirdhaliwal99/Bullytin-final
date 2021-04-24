@@ -56,6 +56,7 @@ const Buttons = styled.div`
 `;
 
 const bullying = {
+  //cyberbullying start
     cyberbullying:{
         text1:"Cyberbullying is a using the internet or text messages to intimidate, spread rumors, or make fun of someone.",
         text2:"Where did this happen?",
@@ -108,6 +109,133 @@ const bullying = {
       secondtext:"Unknown trolls",
       routeTo:"/pages2/socialmedia"
   },
+  //cyberbullying end
+
+
+  //verbalbullying start
+  verbalbullying:{
+    text1:"Verbal bullying is the act of forcefully criticizing, insulting, or denouncing another person.",
+    text2:"Where did this happen?",
+    text:"Direct Insults",
+    secondtext:"Bigoted remarks",
+    routeTo:"/pages2/insults",
+    routeTo2:"/pages2/remarks"
+  },
+  insults:{
+    text1:"Direct insults come in the form of name-calling, teasing and threats.",
+    text2:"Which of the following did the insult contain?",
+    text:"Did someone call you names",
+    secondtext:"Did someone threaten you?",
+    routeTo:"/pages2/names",
+    routeTo2:"/pages2/threatenverbal"
+  },
+  remarks:{
+    text1:"Bigoted remarks are making negative references to one’s culture, ethnicity, race, religion, gender, or sexual orientation.",
+    text2:"Which of the following did the remark contain?",
+    text:"Did someone call you names?",
+    secondtext:"Did someone threaten you?",
+    routeTo:"/pages2/names",
+    routeTo2:"/pages2/threatenverbal"
+  },
+  names:{
+    text1:"Name calling can lead to more people joining in or  could even lead to physical bullying if escalated. It best to seek help immediately.",
+    text2:"Do you think things might escalate?",
+    text:"I think it might escalate",
+    secondtext:"I think it will stay as is",
+    routeTo:"/pages2/whodidit",
+    routeTo2:"/pages2/whodidit"
+  },
+  threatenverbal:{
+    text1:"Threats can range from minor to major and all of them should be taken seriously. Although most threats do not evolve, they shoud be taken seriously as they are a crime.",
+    text2:"What type of threat was it?",
+    text:"Minor threat",
+    secondtext:"Major threat (assault)",
+    routeTo:"/pages2/whodidit",
+    routeTo2:"/pages2/whodidit"
+  },
+  whodidit:{
+    text1:"Who is the person or group that is doing this to you?",
+    text2:"What type of threat was it?",
+    text:"Classmates",
+    secondtext:"Family",
+    routeTo:"/pages2/whodidit",
+    routeTo2:"/pages2/whodidit"
+  },
+  //verbalbullying end
+
+
+  //physicalbullying start
+  physicalbullying:{
+    text1:"Physical Bullying is the act of hitting, poking, pinching, chasing, shoving, coercing, destroying or stealing belongings, unwanted sexual touching.",
+    text2:"What kind of physical bullying happened",
+    text:"Punching/Kicking",
+    secondtext:"Use of weapons",
+    routeTo:"/pages2/punch",
+    routeTo2:"/pages2/weapon"
+  },
+
+  punch:{
+    text1:"To what extent did this hitting go to?",
+    text2:"The most important thing is if you are ok!",
+    text:"I am not hurt, but someone did hit me",
+    secondtext:"I am hurt or injured from being hit",
+    routeTo:"/pages2/nothurt",
+    routeTo2:"/pages2/hurt"
+  },
+
+  nothurt :{
+    text1:"Make sure that you are truly not hurt, as if you are you may not findout untill it gets worse",
+    text2:"After being hit, did this issue come to an end, or do you think it may happen again?",
+    text:"I fear it may happen again",
+    secondtext:"I think this issue has come to an end",
+    routeTo:"/pages2/whohurt",
+    routeTo2:"/pages2/whohurt"
+  },
+
+  hurt :{
+    text1:"If you're injured or hurt make sure you get the medical help you need.",
+    text2:"Is there someone around that can help?",
+    text:"No one around can help",
+    secondtext:"I have someone that can help me",
+    routeTo:"/pages2/whohurt",
+    routeTo2:"/pages2/whohurt"
+  },
+  weapon:{
+    text1:"Bullying with the use of weapons is extremely alarming and likely illegal.",
+    text2:"We want to make sure that nothing more happens",
+    text:"Did someone threaten you with a weapon?",
+    secondtext:"Did someone assault you with a weapon?",
+    routeTo:"/pages2/wepthreat",
+    routeTo2:"/pages2/wepassault"
+  },
+
+  wepthreat:{
+    text1:"Notify someone immediatley. Are you comfortable telling your family or teacher about this?",
+    text2:"A threat like this is to be taken seriously.",
+    text:"I can not tell me family or teacher",
+    secondtext:"I have or can tell my family or teacher",
+    routeTo:"/pages2/whohurt",
+    routeTo2:"/pages2/whohurt"
+  },
+
+  wepassault:{
+    text1:"If youve been assaulted by a weapon this is extreme bullying",
+    text2:"Do you think this issue has come to an end or fear it may happen again?",
+    text:"I fear it may happen again",
+    secondtext:"I think this issue has come to an end",
+    routeTo:"/pages2/whohurt",
+    routeTo2:"/pages2/whohurt"
+  },
+
+  whohurt:{
+    text1:"Who is person or group that did this to you",
+    text2:"Make sure that you call someone immediately",
+    text:"Other students",
+    secondtext:"Family",
+    routeTo:"/pages2/whohurt",
+    routeTo2:"/pages2/whohurt"
+  },
+  //physicalbullying end
 }
 export default function Pages2(){
     const router = useRouter();
@@ -120,6 +248,8 @@ export default function Pages2(){
     var link = "/";
     var link2 = "/";
 
+
+    //cyberbullying chain
     if(routing === "cyberbullying"){
         big = bullying.cyberbullying.text1;
         sub = bullying.cyberbullying.text2;
@@ -164,6 +294,138 @@ export default function Pages2(){
         but1 = bullying.threatenharm.text
         but2 = bullying.threatenharm.secondtext
     }
+    //cyberbullying end
+
+
+    //verbal bullying chain
+    if(routing === "verbalbullying"){
+      big = bullying.verbalbullying.text1;
+      sub = bullying.verbalbullying.text2;
+      but1 = bullying.verbalbullying.text
+      but2 = bullying.verbalbullying.secondtext
+      link = bullying.verbalbullying.routeTo
+      link2 = bullying.verbalbullying.routeTo2
+    }
+
+    if(routing === "insults"){
+      big = bullying.insults.text1;
+      sub = bullying.insults.text2;
+      but1 = bullying.insults.text
+      but2 = bullying.insults.secondtext
+      link = bullying.insults.routeTo
+      link2 = bullying.insults.routeTo2
+    }
+
+    if(routing === "remarks"){
+      big = bullying.remarks.text1;
+      sub = bullying.remarks.text2;
+      but1 = bullying.remarks.text
+      but2 = bullying.remarks.secondtext
+      link = bullying.remarks.routeTo
+      link2 = bullying.remarks.routeTo2
+    }
+
+    if(routing === "names"){
+      big = bullying.names.text1;
+      sub = bullying.names.text2;
+      but1 = bullying.names.text
+      but2 = bullying.names.secondtext
+      link = bullying.names.routeTo
+      link2 = bullying.names.routeTo2
+    }
+
+    if(routing === "threatenverbal"){
+      big = bullying.threatenverbal.text1;
+      sub = bullying.threatenverbal.text2;
+      but1 = bullying.threatenverbal.text
+      but2 = bullying.threatenverbal.secondtext
+      link = bullying.threatenverbal.routeTo
+      link2 = bullying.threatenverbal.routeTo2
+    }
+    if(routing === "whodidit"){
+      big = bullying.whodidit.text1;
+      sub = bullying.whodidit.text2;
+      but1 = bullying.whodidit.text
+      but2 = bullying.whodidit.secondtext
+      link = bullying.whodidit.routeTo
+      link2 = bullying.whodidit.routeTo2
+    }
+    //verbalbullying end
+
+
+    //physical bullying chain
+    if(routing === "physicalbullying"){
+      big = bullying.physicalbullying.text1;
+      sub = bullying.physicalbullying.text2;
+      but1 = bullying.physicalbullying.text
+      but2 = bullying.physicalbullying.secondtext
+      link = bullying.physicalbullying.routeTo
+      link2 = bullying.physicalbullying.routeTo2
+    }
+
+    if(routing === "punch"){
+      big = bullying.punch.text1;
+      sub = bullying.punch.text2;
+      but1 = bullying.punch.text
+      but2 = bullying.punch.secondtext
+      link = bullying.punch.routeTo
+      link2 = bullying.punch.routeTo2
+    }
+
+    if(routing === "weapon"){
+      big = bullying.weapon.text1;
+      sub = bullying.weapon.text2;
+      but1 = bullying.weapon.text
+      but2 = bullying.weapon.secondtext
+      link = bullying.weapon.routeTo
+      link2 = bullying.weapon.routeTo2
+    }
+
+    if(routing === "hurt"){
+      big = bullying.hurt.text1;
+      sub = bullying.hurt.text2;
+      but1 = bullying.hurt.text
+      but2 = bullying.hurt.secondtext
+      link = bullying.hurt.routeTo
+      link2 = bullying.hurt.routeTo2
+    }
+
+    if(routing === "nothurt"){
+      big = bullying.nothurt.text1;
+      sub = bullying.nothurt.text2;
+      but1 = bullying.nothurt.text
+      but2 = bullying.nothurt.secondtext
+      link = bullying.nothurt.routeTo
+      link2 = bullying.nothurt.routeTo2
+    }
+
+    if(routing === "wepthreat"){
+      big = bullying.wepthreat.text1;
+      sub = bullying.wepthreat.text2;
+      but1 = bullying.wepthreat.text
+      but2 = bullying.wepthreat.secondtext
+      link = bullying.wepthreat.routeTo
+      link2 = bullying.wepthreat.routeTo2
+    }
+
+    if(routing === "wepassault"){
+      big = bullying.wepassault.text1;
+      sub = bullying.wepassault.text2;
+      but1 = bullying.wepassault.text
+      but2 = bullying.wepassault.secondtext
+      link = bullying.wepassault.routeTo
+      link2 = bullying.wepassault.routeTo2
+    }
+
+    if(routing === "whohurt"){
+      big = bullying.whohurt.text1;
+      sub = bullying.whohurt.text2;
+      but1 = bullying.whohurt.text
+      but2 = bullying.whohurt.secondtext
+      link = bullying.whohurt.routeTo
+      link2 = bullying.whohurt.routeTo2
+    }
+    //physical bullying end
 
     return <OuterContainer>
       <Container>
@@ -189,7 +451,6 @@ export default function Pages2(){
       </Container>
     </OuterContainer>
     
-  
 }
 
 
