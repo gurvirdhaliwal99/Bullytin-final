@@ -94,6 +94,7 @@ export default function Pages2(){
     var but1 = "Social Media Posts";
     var but2 = "Text Messaging";
     var link = "/";
+    var link2 = "/";
 
     if(routing === "cyberbullying"){
         big = bullying.cyberbullying.text1;
