@@ -21,6 +21,7 @@ const ButtonInput = styled.button`
 
 const Button = ({
     text="Test Button",
+    secondtext="",
     color="white",
     padding="10px 50px",
     bottom="0px",
@@ -31,7 +32,7 @@ const Button = ({
     const router = useRouter();
     return <div>
         <ButtonInput color={color} padding={padding} bottom={bottom} right={right} left={left} onClick={()=>router.push(routeTo)}>
-            {text}
+            {text}{secondtext}
         </ButtonInput>
     </div>
 }
