@@ -61,14 +61,24 @@ const bullying = {
         text2:"Where did this happen?",
         text:"Social media post",
         secondtext:"Text messaging",
-        routeTo:"/pages2/socialmedia"
+        routeTo:"/pages2/socialmedia",
+        routeTo2:"/pages2/texting"
     },
     socialmedia:{
         text1:"Unfortunatley, social media isnt always a friendly place. You can block the user or even report them.",
         text2:"Which of the following did you experience?",
         text:"Did someone threaten you?",
         secondtext:"Did someone spread rumors?",
-        routeTo:"/pages2/intimidated"
+        routeTo:"/pages2/intimidated",
+        routeTo2:"/pages2/rumor"
+    },
+    texting:{
+      text1:"Cyberbullying is a using the internet or text messages to intimidate, spread rumors, or make fun of someone.",
+      text2:"Which of the following did the text message contain?",
+      text:"Did someone threaten you?",
+      secondtext:"Did someone spread rumors?",
+      routeTo:"/pages2/intimidated",
+      routeTo2:"/pages2/rumor"
     },
     intimidated:{
         text1:"Intimidation can be a form of bullying or criminal in some cases. Lets take a close look at your experience.",
@@ -77,6 +87,13 @@ const bullying = {
         secondtext:"Did someone post something about you?",
         routeTo:"/pages2/threatenharm"
     },
+    rumor:{
+      text1:"Rumors are stories that are most likely false and can have malicious intent. Unlike threats, rumors can be spread faster through word of mouth.",
+      text2:"How did this rumor start?",
+      text:"Did someone post a fake story about you?",
+      secondtext:"Has someone created a fake account that uses your identity?",
+      routeTo:"/pages2/threatenharm"
+  },
     threatenharm:{
         text1:"I am sorry to hear youve been threatened. We are here for you!",
         text2:"Who is the person or group that is doing this to you?",
@@ -84,6 +101,13 @@ const bullying = {
         secondtext:"Unknown trolls",
         routeTo:"/pages2/socialmedia"
     },
+    whodid:{
+      text1:"I am sorry to hear youve been threatened. We are here for you!",
+      text2:"Who is the person or group that is doing this to you?",
+      text:"Classmates",
+      secondtext:"Unknown trolls",
+      routeTo:"/pages2/socialmedia"
+  },
 }
 export default function Pages2(){
     const router = useRouter();
@@ -102,6 +126,7 @@ export default function Pages2(){
         but1 = bullying.cyberbullying.text
         but2 = bullying.cyberbullying.secondtext
         link = bullying.cyberbullying.routeTo
+        link2 = bullying.cyberbullying.routeTo2
     }
     if(routing === "socialmedia"){
         big = bullying.socialmedia.text1;
@@ -109,7 +134,16 @@ export default function Pages2(){
         but1 = bullying.socialmedia.text
         but2 = bullying.socialmedia.secondtext
         link = bullying.socialmedia.routeTo
+        link2 = bullying.socialmedia.routeTo2
     }
+    if(routing === "texting"){
+      big = bullying.texting.text1;
+      sub = bullying.texting.text2;
+      but1 = bullying.texting.text
+      but2 = bullying.texting.secondtext
+      link = bullying.texting.routeTo
+      link2 = bullying.texting.routeTo
+  }
     if(routing === "intimidated"){
         big = bullying.intimidated.text1;
         sub = bullying.intimidated.text2;
@@ -117,6 +151,13 @@ export default function Pages2(){
         but2 = bullying.intimidated.secondtext
         link = bullying.intimidated.routeTo
     }
+    if(routing === "rumor"){
+      big = bullying.rumor.text1;
+      sub = bullying.rumor.text2;
+      but1 = bullying.rumor.text
+      but2 = bullying.rumor.secondtext
+      link = bullying.rumor.routeTo
+  }
     if(routing === "threatenharm"){
         big = bullying.threatenharm.text1;
         sub = bullying.threatenharm.text2;
