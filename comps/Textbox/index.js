@@ -25,7 +25,7 @@ const BoxBody = styled.p`
 
 
 const Box = ({
-    text="Bullying sample text",
+    text1="Bullying sample text",
 
     border="4px solid #7CB2E3",
     height="25vh",
@@ -36,7 +36,7 @@ const Box = ({
 
     return <div>
             <TextBox border={border} height={height} width={width} bottom={bottom} left={left}>
-                <BoxBody>{text}</BoxBody>
+                <BoxBody>{text1}</BoxBody>
             </TextBox>
         </div>
 }
