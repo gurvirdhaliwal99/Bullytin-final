@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Button from "../comps/Button/index.js";
 import Circle from "../comps/Circlelogo/index.js";
 import Box from "../comps/Textbox/index.js";
+import Box2 from "../comps/Textbox2/index.js";
 import AvatarV from "../comps/Avatar_V/index.js";
 import AvatarW from "../comps/Avatar_W/index.js";
 import Back from "../comps/Backbutton/index.js";
@@ -67,7 +68,7 @@ export default function Home() {
 
         <Body>
           <Box text="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" bottom="-20px"></Box>
-          <Box text="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px"></Box>
+          <Box2 text2="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px"></Box2>
         </Body>
 
         <Buttons>

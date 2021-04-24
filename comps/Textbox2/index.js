@@ -24,8 +24,8 @@ const BoxBody = styled.p`
 `;
 
 
-const Box = ({
-    text="Bullying sample text",
+const Box2 = ({
+    text2="Bullying sample text",
 
     border="4px solid #7CB2E3",
     height="25vh",
@@ -36,9 +36,9 @@ const Box = ({
 
     return <div>
             <TextBox border={border} height={height} width={width} bottom={bottom} left={left}>
-                <BoxBody>{text}</BoxBody>
+                <BoxBody>{text2}</BoxBody>
             </TextBox>
         </div>
 }
 
-export default Box;
+export default Box2;
