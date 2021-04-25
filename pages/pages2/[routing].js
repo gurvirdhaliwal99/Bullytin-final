@@ -86,14 +86,17 @@ const bullying = {
         text2:"How has the bully intimidated you?",
         text:"Did someone threaten to harm you?",
         secondtext:"Did someone post something about you?",
-        routeTo:"/pages2/threatenharm"
+        routeTo:"/pages2/whodid",
+        routeTo2:"/pages2/whodid"
+        
     },
     rumor:{
       text1:"Rumors are stories that are most likely false and can have malicious intent. Unlike threats, rumors can be spread faster through word of mouth.",
       text2:"How did this rumor start?",
       text:"Did someone post a fake story about you?",
       secondtext:"Has someone created a fake account that uses your identity?",
-      routeTo:"/pages2/threatenharm"
+      routeTo:"/pages2/whodid",
+      routeTo2:"/pages2/whodid"
   },
     threatenharm:{
         text1:"I am sorry to hear youve been threatened. We are here for you!",
@@ -272,7 +275,7 @@ export default function Pages2(){
       but1 = bullying.texting.text
       but2 = bullying.texting.secondtext
       link = bullying.texting.routeTo
-      link2 = bullying.texting.routeTo
+      link2 = bullying.texting.routeTo2
   }
     if(routing === "intimidated"){
         big = bullying.intimidated.text1;
@@ -280,6 +283,7 @@ export default function Pages2(){
         but1 = bullying.intimidated.text
         but2 = bullying.intimidated.secondtext
         link = bullying.intimidated.routeTo
+        link2 = bullying.intimidated.routeTo2
     }
     if(routing === "rumor"){
       big = bullying.rumor.text1;
@@ -287,6 +291,7 @@ export default function Pages2(){
       but1 = bullying.rumor.text
       but2 = bullying.rumor.secondtext
       link = bullying.rumor.routeTo
+      link2 = bullying.rumor.routeTo2
   }
     if(routing === "threatenharm"){
         big = bullying.threatenharm.text1;
@@ -294,6 +299,12 @@ export default function Pages2(){
         but1 = bullying.threatenharm.text
         but2 = bullying.threatenharm.secondtext
     }
+    if(routing === "whodid"){
+      big = bullying.whodid.text1;
+      sub = bullying.whodid.text2;
+      but1 = bullying.whodid.text
+      but2 = bullying.whodid.secondtext
+  }
     //cyberbullying end
 
 
