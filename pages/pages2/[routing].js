@@ -458,7 +458,6 @@ export default function Pages2(){
           
 
         </Buttons>
-
       </Container>
     </OuterContainer>
     

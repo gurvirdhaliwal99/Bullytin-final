@@ -23,7 +23,6 @@ const AvatarW = ({
     
     return <div>
         <AvatarInputW bgImg={bgImg} width={width} height={height} bsize={bsize} right={right} bottom={bottom}>
-
         </AvatarInputW>
     </div>
 }
