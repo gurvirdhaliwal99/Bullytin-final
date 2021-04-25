@@ -10,14 +10,76 @@ import Step from "../../comps/Step/index.js";
 import styled from "styled-components";
 import {useRouter} from 'next/router';
 
+const OuterContainer = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+`;
+
+const Container = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  background-image: url("BG_Blue.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#88BEE7;
+  height: 100vh;
+  width: 100vw;
+`;  
+
+const Header = styled.div`
+  display:flex;
+  position: relative;
+  bottom: 3.5vh
+  flex-direction: row;
+`;
+
+const Body = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  position: relative;
+  top: 25vh;
+`;
+
+const Buttons = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  position: relative;
+  bottom: -0.4vh;
+`;
+
+const results = {
+  resultspolice:{
+    text1:"From what youve told us,",
+    text2:"If you need more help, email us: Support@bullyingCanada.ca or call us: (677)-553-4497",
+    text:"Return Home",
+  }
+}
+
 export default function Pages2(){
     const router = useRouter();
     const {routing} = router.query;
+
 
     var big = "From what youve told us,";
     var sub = "If you need more help, email us: Support@bullyingCanada.ca or call us: (677)-553-4497";
     var but1 = "Return Home";
     var link = "/";
+
+    if(routing === ""){
+      big = bullying.cyberbullying.text1;
+      sub = bullying.cyberbullying.text2;
+      but1 = bullying.cyberbullying.text
+      but2 = bullying.cyberbullying.secondtext
+      link = bullying.cyberbullying.routeTo
+      link2 = bullying.cyberbullying.routeTo2
+  }
 
 
     return <OuterContainer>
