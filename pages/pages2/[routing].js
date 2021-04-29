@@ -110,14 +110,10 @@ const bullying = {
       text1:"I am sorry to hear youve been threatened. We are here for you!",
       text2:"Who is the person or group that is doing this to you?",
       text:"Classmates",
-<<<<<<< HEAD
       secondtext:"Unknown trolls",
       routeTo:"/resultpages/cyberbullyclassmates",
       routeTo2:"/resultpages/cyberbullypolice"
-=======
-      secondtext:"I Don't Know",
-      routeTo:"/pages2/socialmedia"
->>>>>>> 1930a7d1fcaeb8c12a026870bd6a34ddf17fdb8d
+
   },
   //cyberbullying end
 

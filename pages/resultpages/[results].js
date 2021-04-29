@@ -25,7 +25,7 @@ const Container = styled.div`
   background-image: url("BG_Blue.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color:#7CB2E3;
+  background-color:#5097D9;
   height: 100vh;
   width: 100vw;
 `;  

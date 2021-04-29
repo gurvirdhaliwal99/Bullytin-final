@@ -24,6 +24,7 @@ const Circle = ({
     const router = useRouter();
     return <div>
         <LogoCircle right={right} onClick={()=>router.push(routerBack)}>
+        <img src="../Logo.png"/>
         </LogoCircle>
     </div>
 }
