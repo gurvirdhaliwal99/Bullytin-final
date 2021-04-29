@@ -3,12 +3,13 @@ import styled from 'styled-components';
 import {useRouter} from "next/router";
 
 const ButtonInput = styled.button`
-    background-color:black;
+    background-color: black;
     display: inline-flex;
     justify-content: center;
     color:${props=>props.color};
     border-radius: 10px;
-    border-color: grey;
+    border: lightgrey 3px solid;
+    width: 250px;
     padding: ${props=>props.padding};
     font-size: 25px;
     text-align: center;
@@ -23,7 +24,7 @@ const Button = ({
     text="Test Button",
     secondtext="",
     color="white",
-    padding="10px 50px",
+    padding="10px 0px",
     bottom="0px",
     left="0px",
     right="0px",
