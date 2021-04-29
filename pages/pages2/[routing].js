@@ -164,7 +164,7 @@ const bullying = {
     text2:"What type of threat was it?",
     text:"Classmates",
     secondtext:"Family",
-    routeTo:"/resultspages/verbalbullyingschool",
+    routeTo:"/resultpages/verbalbullyingschool",
     routeTo2:"/resultpages/verbalbullyingcanada"
   },
   //verbalbullying end
