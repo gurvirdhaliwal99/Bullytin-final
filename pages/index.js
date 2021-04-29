@@ -67,15 +67,15 @@ export default function Home() {
         </div>
 
         <Body>
-          <Box text="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" bottom="-20px"></Box>
+          <Box text1="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" bottom="-20px"></Box>
           <Box2 text2="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px"></Box2>
         </Body>
 
         <Buttons>
           <AvatarW height="140px" width="100px" bsize="100px" right="100px"></AvatarW>
-          <Button text="Bystander" right="75px"  bottom="50px" color="#DC7F9B"   routeTo="/bystander"></Button>
-          <AvatarV height="140px" width="140px" bsize="140px" left="90px" bottom="50px"></AvatarV>
-          <Button text="Victim" padding="10px 70px" bottom="100px" right="-70px" color="#7CB2E3"  ></Button>
+          <Button text="Witnessed" bottom="50px" color="#DC7F9B"  routeTo="/bystander"></Button>
+          <AvatarV bgImg="AvatarV_BigSmileFlip.png" height="140px" width="140px" bsize="140px" left="90px" bottom="50px"></AvatarV>
+          <Button text="Victim" bottom="100px" color="#7CB2E3"  ></Button>
         </Buttons>
 
       </Container>

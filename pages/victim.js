@@ -74,7 +74,7 @@ export default function Home() {
         <Buttons>
           <Button bottom="2vh" text="Cyber Bullying" routeTo="pages2/cyberbullying"></Button>
           <Button bottom="2vh" text="Verbal Bullying" routeTo="pages2/verbalbullying"></Button>
-          <Button bottom="2vh" text="Physical Bullying" routeTo="pages2/physicalbullying"></Button>
+          <Button bottom="2vh" padding="10px 40px" text="Physical Bullying" routeTo="pages2/physicalbullying"></Button>
 
         </Buttons>
 

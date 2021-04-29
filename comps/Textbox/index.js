@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const TextBox = styled.div`
     display: flex;
     justify-content: center;
-    text-align:center;
+    text-align: center;
     background-color: #e5e5e5;
     height: ${props=>props.height};
     width: ${props=>props.width};
@@ -20,7 +20,7 @@ const BoxBody = styled.p`
     display: flex;
     font-size: 18px;
     justify-content: center;
-    align-items: centre;
+    align-items: center;
 `;
 
 

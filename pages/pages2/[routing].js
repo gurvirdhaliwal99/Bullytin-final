@@ -60,16 +60,16 @@ const bullying = {
     cyberbullying:{
         text1:"Cyberbullying is a using the internet or text messages to intimidate, spread rumors, or make fun of someone.",
         text2:"Where did this happen?",
-        text:"Social media post",
-        secondtext:"Text messaging",
+        text:"Social Media",
+        secondtext:"Text Messages",
         routeTo:"/pages2/socialmedia",
         routeTo2:"/pages2/texting"
     },
     socialmedia:{
         text1:"Unfortunatley, social media isnt always a friendly place. You can block the user or even report them.",
         text2:"Which of the following did you experience?",
-        text:"Did someone threaten you?",
-        secondtext:"Did someone spread rumors?",
+        text:"Threatening",
+        secondtext:"Bad Rumours",
         routeTo:"/pages2/intimidated",
         routeTo2:"/pages2/rumor"
     },
@@ -84,8 +84,8 @@ const bullying = {
     intimidated:{
         text1:"Intimidation can be a form of bullying or criminal in some cases. Lets take a close look at your experience.",
         text2:"How has the bully intimidated you?",
-        text:"Did someone threaten to harm you?",
-        secondtext:"Did someone post something about you?",
+        text:"Physical Harm",
+        secondtext:"Blackmail",
         routeTo:"/pages2/whodid",
         routeTo2:"/pages2/whodid"
         
@@ -93,8 +93,8 @@ const bullying = {
     rumor:{
       text1:"Rumors are stories that are most likely false and can have malicious intent. Unlike threats, rumors can be spread faster through word of mouth.",
       text2:"How did this rumor start?",
-      text:"Did someone post a fake story about you?",
-      secondtext:"Has someone created a fake account that uses your identity?",
+      text:"Fake Stories",
+      secondtext:"Fake Account",
       routeTo:"/pages2/whodid",
       routeTo2:"/pages2/whodid"
   },
@@ -109,7 +109,7 @@ const bullying = {
       text1:"I am sorry to hear youve been threatened. We are here for you!",
       text2:"Who is the person or group that is doing this to you?",
       text:"Classmates",
-      secondtext:"Unknown trolls",
+      secondtext:"I Don't Know",
       routeTo:"/pages2/socialmedia"
   },
   //cyberbullying end
@@ -118,41 +118,41 @@ const bullying = {
   //verbalbullying start
   verbalbullying:{
     text1:"Verbal bullying is the act of forcefully criticizing, insulting, or denouncing another person.",
-    text2:"Where did this happen?",
+    text2:"How did this happen?",
     text:"Direct Insults",
-    secondtext:"Bigoted remarks",
+    secondtext:"Bigoted Remarks",
     routeTo:"/pages2/insults",
     routeTo2:"/pages2/remarks"
   },
   insults:{
     text1:"Direct insults come in the form of name-calling, teasing and threats.",
     text2:"Which of the following did the insult contain?",
-    text:"Did someone call you names",
-    secondtext:"Did someone threaten you?",
+    text:"Name Calling",
+    secondtext:"Threats",
     routeTo:"/pages2/names",
     routeTo2:"/pages2/threatenverbal"
   },
   remarks:{
     text1:"Bigoted remarks are making negative references to one’s culture, ethnicity, race, religion, gender, or sexual orientation.",
     text2:"Which of the following did the remark contain?",
-    text:"Did someone call you names?",
-    secondtext:"Did someone threaten you?",
+    text:"Name Calling",
+    secondtext:"Threats",
     routeTo:"/pages2/names",
     routeTo2:"/pages2/threatenverbal"
   },
   names:{
     text1:"Name calling can lead to more people joining in or  could even lead to physical bullying if escalated. It best to seek help immediately.",
     text2:"Do you think things might escalate?",
-    text:"I think it might escalate",
-    secondtext:"I think it will stay as is",
+    text:"Yes",
+    secondtext:"No",
     routeTo:"/pages2/whodidit",
     routeTo2:"/pages2/whodidit"
   },
   threatenverbal:{
     text1:"Threats can range from minor to major and all of them should be taken seriously. Although most threats do not evolve, they shoud be taken seriously as they are a crime.",
     text2:"What type of threat was it?",
-    text:"Minor threat",
-    secondtext:"Major threat (assault)",
+    text:"Minor",
+    secondtext:"Major (assault)",
     routeTo:"/pages2/whodidit",
     routeTo2:"/pages2/whodidit"
   },
@@ -169,10 +169,10 @@ const bullying = {
 
   //physicalbullying start
   physicalbullying:{
-    text1:"Physical Bullying is the act of hitting, poking, pinching, chasing, shoving, coercing, destroying or stealing belongings, unwanted sexual touching.",
-    text2:"What kind of physical bullying happened",
-    text:"Punching/Kicking",
-    secondtext:"Use of weapons",
+    text1:"Physical Bullying is the act of hitting, shoving, destroying or stealing belongings.",
+    text2:"What kind of physical bullying happened?",
+    text:"Physical Hits",
+    secondtext:"Stealing",
     routeTo:"/pages2/punch",
     routeTo2:"/pages2/weapon"
   },
@@ -180,17 +180,17 @@ const bullying = {
   punch:{
     text1:"To what extent did this hitting go to?",
     text2:"The most important thing is if you are ok!",
-    text:"I am not hurt, but someone did hit me",
-    secondtext:"I am hurt or injured from being hit",
+    text:"I Am Not Injured",
+    secondtext:"I am Injured",
     routeTo:"/pages2/nothurt",
     routeTo2:"/pages2/hurt"
   },
 
   nothurt :{
-    text1:"Make sure that you are truly not hurt, as if you are you may not findout untill it gets worse",
-    text2:"After being hit, did this issue come to an end, or do you think it may happen again?",
-    text:"I fear it may happen again",
-    secondtext:"I think this issue has come to an end",
+    text1:"Make sure that you are truly not hurt. If you are, you may not find out until it gets worse.",
+    text2:"After being hit, did this issue come to an end or do you think it may continue to happen?",
+    text:"Continue",
+    secondtext:"Not Continue",
     routeTo:"/pages2/whohurt",
     routeTo2:"/pages2/whohurt"
   },
@@ -198,42 +198,42 @@ const bullying = {
   hurt :{
     text1:"If you're injured or hurt make sure you get the medical help you need.",
     text2:"Is there someone around that can help?",
-    text:"No one around can help",
-    secondtext:"I have someone that can help me",
+    text:"No, There Isn't",
+    secondtext:"Yes, There Is",
     routeTo:"/pages2/whohurt",
     routeTo2:"/pages2/whohurt"
   },
   weapon:{
-    text1:"Bullying with the use of weapons is extremely alarming and likely illegal.",
-    text2:"We want to make sure that nothing more happens",
-    text:"Did someone threaten you with a weapon?",
-    secondtext:"Did someone assault you with a weapon?",
+    text1:"Stealing as aform of bullying is extremely alarming and in some cases, illegal.",
+    text2:"Have they stolen anything yet?",
+    text:"Yes",
+    secondtext: "No",
     routeTo:"/pages2/wepthreat",
     routeTo2:"/pages2/wepassault"
   },
 
   wepthreat:{
-    text1:"Notify someone immediatley. Are you comfortable telling your family or teacher about this?",
-    text2:"A threat like this is to be taken seriously.",
-    text:"I can not tell me family or teacher",
-    secondtext:"I have or can tell my family or teacher",
+    text1:"Notify someone immediatley. A threat like this may not be acted upon, but it is best to confont it.",
+    text2:"Are you comfortable telling your family or teacher about this?",
+    text:"Yes, i Am",
+    secondtext:"No, I Am Not",
     routeTo:"/pages2/whohurt",
     routeTo2:"/pages2/whohurt"
   },
 
   wepassault:{
-    text1:"If youve been assaulted by a weapon this is extreme bullying",
-    text2:"Do you think this issue has come to an end or fear it may happen again?",
-    text:"I fear it may happen again",
-    secondtext:"I think this issue has come to an end",
+    text1:"If you have had things stolen from you, this is extreme bullying",
+    text2:"Do you think this issue has come to an end or fear it may continue to happen?",
+    text:"Continue",
+    secondtext:"Not Continue",
     routeTo:"/pages2/whohurt",
     routeTo2:"/pages2/whohurt"
   },
 
   whohurt:{
-    text1:"Who is person or group that did this to you",
-    text2:"Make sure that you call someone immediately",
-    text:"Other students",
+    text1:"Make sure that you call someone immediately.",
+    text2:"Who is person or group that did this to you?",
+    text:"Students",
     secondtext:"Family",
     routeTo:"/pages2/whohurt",
     routeTo2:"/pages2/whohurt"
@@ -462,5 +462,3 @@ export default function Pages2(){
     </OuterContainer>
     
 }
-
-

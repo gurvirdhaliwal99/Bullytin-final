@@ -66,15 +66,15 @@ export default function Home() {
 
         <Body>
           <Step bottom="22vh"></Step>
-          <Box text="Thank you for not being a bystander. The best thing you can do is try to help the person being bullied." height="140px" width="300px" bottom="150px"></Box>
+          <Box text1="Thank you for not being a bystander. The best thing you can do is try to help the person being bullied." height="140px" width="300px" bottom="150px"></Box>
           <AvatarW bgImg="AvatarW_Sus.png" height="140px" width="100px" bsize="100px" right="80%" bottom="120%"></AvatarW>
           <Box2 text2="What type of bullying did you witness?" height="90px" width="300px" bottom="26vh"></Box2>
         </Body>
 
         <Buttons>
-          <Button bottom="2vh"></Button>
-          <Button bottom="2vh"></Button>
-          <Button bottom="2vh"></Button>
+          <Button bottom="2vh" text="Cyber Bullying" routeTo="pages3/cyberbullying"></Button>
+          <Button bottom="2vh" text="Verbal Bullying" routeTo="pages3/verbalbullying"></Button>
+          <Button bottom="2vh" text="Physical Bullying" routeTo="pages3/physicalbullying"></Button>
 
         </Buttons>
 
