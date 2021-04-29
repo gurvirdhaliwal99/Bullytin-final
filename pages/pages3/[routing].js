@@ -62,8 +62,8 @@ const bullying = {
         text2:"Where did this happen?",
         text:"Social Media",
         secondtext:"Text Messages",
-        routeTo:"/result2page/cyberbullyingSM",
-        routeTo2:"/result2page/cyberbullyingTM"
+        routeTo:"/result2page/cyberbullySM",
+        routeTo2:"/result2page/cyberbullyTM"
     },
   //cyberbullying end
 
@@ -74,8 +74,8 @@ const bullying = {
     text2:"How did this happen?",
     text:"Threats",
     secondtext:"Name Calling",
-    routeTo:"/result2page/verbalbullyingthreat",
-    routeTo2:"/result2page/verbalbullyingNC"
+    routeTo:"/result2page/verbalbullythreat",
+    routeTo2:"/result2page/verbalbullyNC"
   },
   //verbalbullying end
 
@@ -86,8 +86,8 @@ const bullying = {
     text2:"What kind of physical bullying happened?",
     text:"Physical Hits",
     secondtext:"Stealing",
-    routeTo:"/result2page/physicalpunch",
-    routeTo2:"/result2page/physicalstealing"
+    routeTo:"/result2page/phsyicalpunch",
+    routeTo2:"/result2page/phsyicalstealing"
   },
   //physicalbullying end
 }
