@@ -103,14 +103,16 @@ const bullying = {
         text2:"Who is the person or group that is doing this to you?",
         text:"Classmates",
         secondtext:"Unknown trolls",
-        routeTo:"/pages2/socialmedia"
+        routeTo:"/resultpages/cyberbullyclassmates",
+        routeTo2:"/resultpages/cyberbullypolice"
     },
     whodid:{
       text1:"I am sorry to hear youve been threatened. We are here for you!",
       text2:"Who is the person or group that is doing this to you?",
       text:"Classmates",
       secondtext:"Unknown trolls",
-      routeTo:"/pages2/socialmedia"
+      routeTo:"/resultpages/cyberbullyclassmates",
+      routeTo2:"/resultpages/cyberbullypolice"
   },
   //cyberbullying end
 
@@ -161,8 +163,8 @@ const bullying = {
     text2:"What type of threat was it?",
     text:"Classmates",
     secondtext:"Family",
-    routeTo:"/pages2/whodidit",
-    routeTo2:"/pages2/whodidit"
+    routeTo:"/resultspages/verbalbullyingschool",
+    routeTo2:"/resultpages/verbalbullyingcanada"
   },
   //verbalbullying end
 
@@ -235,8 +237,8 @@ const bullying = {
     text2:"Make sure that you call someone immediately",
     text:"Other students",
     secondtext:"Family",
-    routeTo:"/pages2/whohurt",
-    routeTo2:"/pages2/whohurt"
+    routeTo:"/resultpages/weaponstudent",
+    routeTo2:"/resultpages/weaponfamily"
   },
   //physicalbullying end
 }
@@ -304,6 +306,7 @@ export default function Pages2(){
       sub = bullying.whodid.text2;
       but1 = bullying.whodid.text
       but2 = bullying.whodid.secondtext
+      link = bullying.whodid.routeTo
   }
     //cyberbullying end
 
