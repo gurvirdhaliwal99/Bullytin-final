@@ -98,47 +98,47 @@ const resultsoption = {
     },
     verbalbullyingschool:{
         text1:"From what you have told us, we recommend you get help from your school Principal or teacher.",
-        text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497",
+        text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497.",
         text:"Return Home",
         routeTo:"/",
     },
 
     //phsyical punch kick
     phsyicalstudents:{
-        text1:"From the results of your survey, we recommend for you to avoid these students and ask a teacher for help if you feel unsafe. Do notrespond with violence.Make sure your teacher orfamily is aware of the situation.",
+        text1:"From the results of your survey, we recommend for you to avoid these students and ask a teacher for help if you feel unsafe. Do notrespond with violence. Make sure your teacher or family is aware of the situation.",
         text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497 Or call your local police 911",
         text:"Return Home",
         routeTo:"/",
     },
     phsyicalstranger:{
-        text1:"From the results of your survey, we recommend for you to call 911 if a stranger is hitting you outside ofschool grounds.Avoid these strangers and do not respond with violence.",
+        text1:"From the results of your survey, we recommend for you to call 911 if a stranger is hitting you outside ofschool grounds. Avoid these strangers and do not respond with violence.",
         text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497 Or call your local police 911",
         text:"Return Home",
         routeTo:"/",
     },
     phsyicalfamily:{
-        text1:"From the results of your survey, we recommend for you to get help from someone outside of your household.Visit bullyingcanada.caor call their helpline.If your family phsyically hurtsyou, you can call 911.",
-        text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497 Or call your local police 911",
+        text1:"From the results of your survey, we recommend for you to get help from someone outside of your household. Visit bullyingcanada.ca or call their helpline.If your family phsyically hurtsyou, you can call 911.",
+        text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497 Or call your local police 911.",
         text:"Return Home",
         routeTo:"/",
     },
 
     //phsyical weapon
     weaponstudent:{
-        text1:"From the results of your survey, we recommend for you to avoid these students and ask a teacher for help if you feel unsafe. Do notrespond with violence.Make sure your teacher orfamily is aware of the situation.",
-        text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497 Or call your local police 911",
+        text1:"From the results of your survey, we recommend for you to avoid these students and ask a teacher for help if you feel unsafe. Do not respond with violence. Make sure your teacher or family is aware of the situation.",
+        text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497 Or call your local police 911.",
         text:"Return Home",
         routeTo:"/",
     },
     weaponstranger:{
-        text1:"From the results of your survey, we recommend for you to call 911 if a stranger is hitting you outside ofschool grounds.Avoid these strangers and do not respond with violence.",
-        text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497 Or call your local police 911",
+        text1:"From the results of your survey, we recommend for you to call 911 if a stranger is hitting you outside ofschool grounds. Avoid these strangers and do not respond with violence.",
+        text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497 Or call your local police 911.",
         text:"Return Home",
         routeTo:"/",
     },
     weaponfamily:{
-        text1:"From the results of your survey, we recommend for you to get help from someone outside of your household.Visit bullyingcanada.caor call their helpline.If your family threatensyou, you can call 911.",
-        text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497 Or call your local police 911",
+        text1:"From the results of your survey, we recommend for you to get help from someone outside of your household. Visit bullyingcanada.ca or call their helpline. If your family threatens you, you can call 911.",
+        text2:"If you need more help, email us: Support@BullyingCanada.ca or call us: (877)-352-4497 Or call your local police 911.",
         text:"Return Home",
         routeTo:"/",
     },

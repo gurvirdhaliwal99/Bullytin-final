@@ -6,10 +6,10 @@ const TextBox = styled.div`
     justify-content: center;
     text-align: center;
     background-color: #e5e5e5;
-    height: ${props=>props.height};
     width: ${props=>props.width};
     border: ${props=>props.border};
     border-radius: 15px;
+    padding: 0px 10px;
     margin-bottom: 50px;    
     position: relative;
     bottom: ${props=>props.bottom};
@@ -35,10 +35,13 @@ const Box = ({
 }) => {
 
     return <div>
-            <TextBox border={border} height={height} width={width} bottom={bottom} left={left}>
+            <TextBox border={border} width={width} bottom={bottom} left={left}>
                 <BoxBody>{text1}</BoxBody>
             </TextBox>
         </div>
 }
+
+// height: ${props=>props.height};
+// height={height}
 
 export default Box;

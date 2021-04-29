@@ -103,16 +103,16 @@ const bullying = {
         text2:"Who is the person or group that is doing this to you?",
         text:"Classmates",
         secondtext:"Unknown trolls",
-        routeTo:"/resultpages/cyberbullyclassmates",
-        routeTo2:"/resultpages/cyberbullypolice"
+        routeTo:"/resultpage/cyberbullyclassmates",
+        routeTo2:"/resultpage/cyberbullypolice"
     },
     whodid:{
       text1:"I am sorry to hear youve been threatened. We are here for you!",
       text2:"Who is the person or group that is doing this to you?",
       text:"Classmates",
       secondtext:"Unknown trolls",
-      routeTo:"/resultpages/cyberbullyclassmates",
-      routeTo2:"/resultpages/cyberbullypolice"
+      routeTo:"/resultpage/cyberbullyclassmates",
+      routeTo2:"/resultpage/cyberbullypolice"
 
   },
   //cyberbullying end
@@ -164,8 +164,8 @@ const bullying = {
     text2:"What type of threat was it?",
     text:"Classmates",
     secondtext:"Family",
-    routeTo:"/resultpages/verbalbullyingschool",
-    routeTo2:"/resultpages/verbalbullyingcanada"
+    routeTo:"/resultpage/verbalbullyingschool",
+    routeTo2:"/resultpage/verbalbullyingcanada"
   },
   //verbalbullying end
 
@@ -238,8 +238,8 @@ const bullying = {
     text2:"Who is person or group that did this to you?",
     text:"Students",
     secondtext:"Family",
-    routeTo:"/resultpages/weaponstudent",
-    routeTo2:"/resultpages/weaponfamily"
+    routeTo:"/resultpage/weaponstudent",
+    routeTo2:"/resultpage/weaponfamily"
   },
   //physicalbullying end
 }

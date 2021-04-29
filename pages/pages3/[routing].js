@@ -62,8 +62,8 @@ const bullying = {
         text2:"Where did this happen?",
         text:"Social Media",
         secondtext:"Text Messages",
-        routeTo:"/pages3/results/socialmedia",
-        routeTo2:"/pages3/results/texting"
+        routeTo:"/result2page/cyberbullyingSM",
+        routeTo2:"/result2page/cyberbullyingTM"
     },
   //cyberbullying end
 
@@ -72,10 +72,10 @@ const bullying = {
   verbalbullying:{
     text1:"Verbal bullying is the act of forcefully criticizing, insulting, or denouncing another person.",
     text2:"How did this happen?",
-    text:"Direct Insults",
-    secondtext:"A Threat",
-    routeTo:"/pages3/results/insults",
-    routeTo2:"/pages3/results/threat"
+    text:"Threats",
+    secondtext:"Name Calling",
+    routeTo:"/result2page/verbalbullyingthreat",
+    routeTo2:"/result2page/verbalbullyingNC"
   },
   //verbalbullying end
 
@@ -86,8 +86,8 @@ const bullying = {
     text2:"What kind of physical bullying happened?",
     text:"Physical Hits",
     secondtext:"Stealing",
-    routeTo:"/pages3/results/punch",
-    routeTo2:"/pages3/results/weapon"
+    routeTo:"/result2page/physicalpunch",
+    routeTo2:"/result2page/physicalstealing"
   },
   //physicalbullying end
 }
@@ -147,9 +147,9 @@ export default function Pages3(){
 
         <Body>
           <Step bottom="22vh"></Step>
-          <Box text1={big} height="125px" width="300px" border="4px solid #DC7F9B" bottom="150px"></Box>
-          <AvatarW height="140px" width="160px" bsize="160px" left="-50%" bottom="120%"></AvatarW>
-          <Box2 text2={sub} height="90px" width="300px" border="4px solid #DC7F9B" bottom="26vh"></Box2>
+          <Box text1={big} height="125px" width="300px" border="4px solid #7CB2E3" bottom="150px"></Box>
+          <AvatarW height="120px" width="120px" bsize="120px" right="-50px" bottom="120%"></AvatarW>
+          <Box2 text2={sub} height="90px" width="300px" border="4px solid #7CB2E3" bottom="26vh"></Box2>
         </Body>
 
         <Buttons>
