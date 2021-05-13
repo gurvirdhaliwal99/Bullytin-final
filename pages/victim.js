@@ -33,7 +33,7 @@ const Container = styled.div`
 const Header = styled.div`
   display:flex;
   position: relative;
-  bottom: 3.5vh
+  bottom: -3vh;
   flex-direction: row;
 `;
 
