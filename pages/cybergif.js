@@ -33,7 +33,7 @@ const Container = styled.div`
 const Header = styled.div`
   display:flex;
   position: relative;
-  bottom: 35vh;
+  bottom: 5vh;
   flex-direction: row;
 `;
 
@@ -43,7 +43,7 @@ const Body = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  top: 25vh;
+  top: -1vh;
 `;
 
 const Buttons = styled.div`
@@ -52,7 +52,7 @@ const Buttons = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  bottom:-35vh;
+  bottom:-10vh;
 `;
 
 export default function Home() {
@@ -65,7 +65,7 @@ export default function Home() {
         </Header>
 
         <Body>
-            <img src="./public/cyber.gif"></img>
+            <img src="cyber.gif"></img>
         </Body>
 
         <Buttons>
