@@ -62,12 +62,14 @@ const resultsoption = {
         text2:"The victim can also: Block/unfollow the bully, change their username or delete hurtful comments.",
         text:"Return Home",
         routeTo:"/",
+        backto:"/pages3/cyberbullying"
     },
     cyberbullyTM:{
         text1:"Contact the victim and ensure that they are okay and ask if they are willing to report the issue. It is important to encourage them to talk about what happened with someone they trust.",
         text2:"The victim can also: Block the bully’s number, change their phone number, or delete the chat.",
         text:"Return Home",
         routeTo:"/",
+        backto:"/pages3/cyberbullying"
     },
 
     //verbal
@@ -76,12 +78,14 @@ const resultsoption = {
         text2:"The victim can also: Say positive things in return, stand their ground or surround themselves with friends.",
         text:"Return Home",
         routeTo:"/",
+        backto:"/pages3/verbalbullying"
     },
     verbalbullyNC:{
         text1:"It may not be sticks or stones, but words can still hurt people. If this has happened more than once, contact the victim and ensure that they are okay and ask if they are willing to report the issue.",
         text2:"The victim can also: ignore the names-calling, surround themselves with friends or avoid the bully.",
         text:"Return Home",
         routeTo:"/",
+        backto:"/pages3/verbalbullying"
     },
 
     //phsyical
@@ -90,12 +94,14 @@ const resultsoption = {
         text2:"The victim can also: Confide in a trusted adult (a parent or teacher), run or walk away or even calmy stand up to the bully.",
         text:"Return Home",
         routeTo:"/",
+        backto:"/pages3/physicalbullying"
     },
     phsyicalstealing:{
         text1:"In serious cases, stealing is labelled as a criminal offence. It is important to encourage the victim to report the stolen items to someone they trust.",
         text2:"The victim can also: hide or lock away items they think may get stolen or calmy stand up to the bully and ask for their belongings back.",
         text:"Return Home",
         routeTo:"/",
+        backto:"/pages3/physicalbullying"
     },
 }
 
@@ -107,20 +113,23 @@ export default function Results(){
     var sub = "Small text";
     var but1 = "Return Home";
     var link = "/";
+    var back = "/";
 
     //cyberbully results
     if(results === "cyberbullySM"){
         big = resultsoption.cyberbullySM.text1;
         sub = resultsoption.cyberbullySM.text2;
         but1 = resultsoption.cyberbullySM.text;
-        link = resultsoption.cyberbullySM.routeTo
+        link = resultsoption.cyberbullySM.routeTo;
+        back = resultsoption.cyberbullySM.backto
     }
 
     if(results === "cyberbullyTM"){
         big = resultsoption.cyberbullyTM.text1;
         sub = resultsoption.cyberbullyTM.text2;
         but1 = resultsoption.cyberbullyTM.text;
-        link = resultsoption.cyberbullyTM.routeTo
+        link = resultsoption.cyberbullyTM.routeTo;
+        back = resultsoption.cyberbullySM.backto
     }
 
     //verbal results
@@ -128,13 +137,15 @@ export default function Results(){
         big = resultsoption.verbalbullythreat.text1;
         sub = resultsoption.verbalbullythreat.text2;
         but1 = resultsoption.verbalbullythreat.text;
-        link = resultsoption.verbalbullythreat.routeTo
+        link = resultsoption.verbalbullythreat.routeTo;
+        back = resultsoption.verbalbullythreat.backto
     }
     if(results === "verbalbullyNC"){
         big = resultsoption.verbalbullyNC.text1;
         sub = resultsoption.verbalbullyNC.text2;
         but1 = resultsoption.verbalbullyNC.text;
-        link = resultsoption.verbalbullyNC.routeTo
+        link = resultsoption.verbalbullyNC.routeTo;
+        back = resultsoption.verbalbullyNC.backto
     }
 
     //phsyical punch kick results
@@ -142,19 +153,21 @@ export default function Results(){
         big = resultsoption.phsyicalpunch.text1;
         sub = resultsoption.phsyicalpunch.text2;
         but1 = resultsoption.phsyicalpunch.text;
-        link = resultsoption.phsyicalpunch.routeTo
+        link = resultsoption.phsyicalpunch.routeTo;
+        back = resultsoption.phsyicalpunch.backto
     }
     if(results === "phsyicalstealing"){
         big = resultsoption.phsyicalstealing.text1;
         sub = resultsoption.phsyicalstealing.text2;
         but1 = resultsoption.phsyicalstealing.text;
         link = resultsoption.phsyicalstealing.routeTo
+        back = resultsoption.phsyicalstealing.backto
     }
 
     return <OuterContainer>
       <Container>
         <Header>
-          <Back top="1vh" left="-20vw"></Back>
+          <Back top="1vh" left="-20vw" routerBack={back}></Back>
           <Circle right="25px"></Circle>
         </Header>
 

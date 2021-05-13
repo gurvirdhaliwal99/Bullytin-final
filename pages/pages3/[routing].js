@@ -63,7 +63,8 @@ const bullying = {
         text:"Social Media",
         secondtext:"Text Messages",
         routeTo:"/result2page/cyberbullySM",
-        routeTo2:"/result2page/cyberbullyTM"
+        routeTo2:"/result2page/cyberbullyTM",
+        backto:"/bystander"
     },
   //cyberbullying end
 
@@ -75,7 +76,8 @@ const bullying = {
     text:"Threats",
     secondtext:"Name Calling",
     routeTo:"/result2page/verbalbullythreat",
-    routeTo2:"/result2page/verbalbullyNC"
+    routeTo2:"/result2page/verbalbullyNC",
+    backto:"/bystander"
   },
   //verbalbullying end
 
@@ -87,7 +89,8 @@ const bullying = {
     text:"Physical Hits",
     secondtext:"Stealing",
     routeTo:"/result2page/phsyicalpunch",
-    routeTo2:"/result2page/phsyicalstealing"
+    routeTo2:"/result2page/phsyicalstealing",
+    backto:"/bystander"
   },
   //physicalbullying end
 }
@@ -101,6 +104,7 @@ export default function Pages3(){
     var but2 = "Text Messaging";
     var link = "/";
     var link2 = "/";
+    var back = "/";
 
 
     //cyberbullying chain
@@ -111,6 +115,7 @@ export default function Pages3(){
         but2 = bullying.cyberbullying.secondtext
         link = bullying.cyberbullying.routeTo
         link2 = bullying.cyberbullying.routeTo2
+        back = bullying.cyberbullying.backto
     }
     //cyberbullying end
 
@@ -123,6 +128,7 @@ export default function Pages3(){
       but2 = bullying.verbalbullying.secondtext
       link = bullying.verbalbullying.routeTo
       link2 = bullying.verbalbullying.routeTo2
+      back = bullying.verbalbullying.backto
     }
     //verbalbullying end
 
@@ -135,13 +141,14 @@ export default function Pages3(){
       but2 = bullying.physicalbullying.secondtext
       link = bullying.physicalbullying.routeTo
       link2 = bullying.physicalbullying.routeTo2
+      back = bullying.physicalbullying.backto
     }
     //physical bullying end
 
     return <OuterContainer>
       <Container>
         <Header>
-          <Back top="1vh" left="-20vw"></Back>
+          <Back top="1vh" left="-20vw" routerBack={back}></Back>
           <Circle right="25px"></Circle>
         </Header>
 
