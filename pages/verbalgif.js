@@ -33,7 +33,7 @@ const Container = styled.div`
 const Header = styled.div`
   display:flex;
   position: relative;
-  bottom: 3.5vh
+  bottom: 35vh;
   flex-direction: row;
 `;
 
@@ -52,7 +52,7 @@ const Buttons = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  bottom: -0.4vh;
+  bottom:-35vh;
 `;
 
 export default function Home() {
@@ -65,16 +65,11 @@ export default function Home() {
         </Header>
 
         <Body>
-          <Step bottom="22vh"></Step>
-          <Box text1="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" border="4px solid #DC7F9B" bottom="150px"></Box>
-          <AvatarV height="140px" width="160px" bsize="160px" left="-50%" bottom="120%"></AvatarV>
-          <Box2 text2="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px" border="4px solid #DC7F9B" bottom="26vh"></Box2>
+            <img src="./public/verbal.gif"></img>
         </Body>
 
         <Buttons>
-          <Button bottom="2vh" text="Cyber Bullying" routeTo="cybergif"></Button>
-          <Button bottom="2vh" text="Verbal Bullying" routeTo="verbalgif"></Button>
-          <Button bottom="2vh" padding="10px 40px" text="Physical Bullying" routeTo="physicalgif"></Button>
+          <Button bottom="2vh" padding="10px 40px" text="Continue" routeTo="pages2/verbalbullying"></Button>
 
         </Buttons>
 
