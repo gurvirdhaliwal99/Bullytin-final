@@ -60,7 +60,7 @@ export default function Home() {
     <OuterContainer>
       <Container>
         <Header>
-          <Back top="1vh" left="-20vw"></Back>
+          <Back top="1vh" left="-20vw" routerBack="/victim"></Back>
           <Circle right="25px"></Circle>
         </Header>
 

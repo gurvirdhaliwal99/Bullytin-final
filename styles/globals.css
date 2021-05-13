@@ -11,7 +11,14 @@ body {
 .intro {
   position: relative;
   line-height: 10px;
-  top: 9vh;
+  top: 9.5vh;
+  animation-name: opacity;
+  animation-duration: 1s;
+}
+
+@keyframes opacity{
+  0%   {opacity: 0%;}
+  100% {opacity: 100%;}
 }
 
 h2 {
@@ -20,6 +27,13 @@ h2 {
   text-shadow: #D9406E 2px 4px 2px;
   font-size: 40px;
   letter-spacing: 5px;
+  animation-name: opacity;
+  animation-duration: 1s;
+}
+
+@keyframes opacity{
+  0%   {opacity: 0%;}
+  100% {opacity: 100%;}
 }
 
 p {

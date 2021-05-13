@@ -63,7 +63,8 @@ const bullying = {
         text:"Social Media",
         secondtext:"Text Messages",
         routeTo:"/pages2/socialmedia",
-        routeTo2:"/pages2/texting"
+        routeTo2:"/pages2/texting",
+        backto:"/victim"
     },
     socialmedia:{
         text1:"Unfortunatley, social media isnt always a friendly place. You can block the user or even report them.",
@@ -71,23 +72,26 @@ const bullying = {
         text:"Threatening",
         secondtext:"Bad Rumours",
         routeTo:"/pages2/intimidated",
-        routeTo2:"/pages2/rumor"
+        routeTo2:"/pages2/rumor",
+        backto:"/pages2/cyberbullying"
     },
     texting:{
-      text1:"Cyberbullying is a using the internet or text messages to intimidate, spread rumors, or make fun of someone.",
+      text1:"Texting should never be used to insult or hurt anyone. ",
       text2:"Which of the following did the text message contain?",
-      text:"Did someone threaten you?",
-      secondtext:"Did someone spread rumors?",
+      text:"A Threat",
+      secondtext:"False Rumours",
       routeTo:"/pages2/intimidated",
-      routeTo2:"/pages2/rumor"
+      routeTo2:"/pages2/rumor",
+      backto:"/pages2/cyberbullying"
     },
     intimidated:{
-        text1:"Intimidation can be a form of bullying or criminal in some cases. Lets take a close look at your experience.",
+        text1:"Intimidation can be a form of bullying or criminal in some cases. Let's take a close look at your experience.",
         text2:"How has the bully intimidated you?",
         text:"Physical Harm",
         secondtext:"Blackmail",
         routeTo:"/pages2/whodid",
-        routeTo2:"/pages2/whodid"
+        routeTo2:"/pages2/whodid",
+        backto:"/pages2/cyberbullying"
         
     },
     rumor:{
@@ -96,23 +100,26 @@ const bullying = {
       text:"Fake Stories",
       secondtext:"Fake Account",
       routeTo:"/pages2/whodid",
-      routeTo2:"/pages2/whodid"
+      routeTo2:"/pages2/whodid",
+      backto:"/pages2/cyberbullying"
   },
     threatenharm:{
         text1:"I am sorry to hear youve been threatened. We are here for you!",
         text2:"Who is the person or group that is doing this to you?",
         text:"Classmates",
-        secondtext:"Unknown trolls",
+        secondtext:"Unknown Trolls",
         routeTo:"/resultpage/cyberbullyclassmates",
-        routeTo2:"/resultpage/cyberbullypolice"
+        routeTo2:"/resultpage/cyberbullypolice",
+        backto:"/pages2/cyberbullying"
     },
     whodid:{
       text1:"I am sorry to hear youve been threatened. We are here for you!",
       text2:"Who is the person or group that is doing this to you?",
       text:"Classmates",
-      secondtext:"Unknown trolls",
+      secondtext:"Unknown Trolls",
       routeTo:"/resultpage/cyberbullyclassmates",
-      routeTo2:"/resultpage/cyberbullypolice"
+      routeTo2:"/resultpage/cyberbullypolice",
+      backto:"/pages2/cyberbullying"
 
   },
   //cyberbullying end
@@ -125,23 +132,29 @@ const bullying = {
     text:"Direct Insults",
     secondtext:"Bigoted Remarks",
     routeTo:"/pages2/insults",
-    routeTo2:"/pages2/remarks"
+    routeTo2:"/pages2/remarks",
+    backto:"/victim"
   },
+
   insults:{
     text1:"Direct insults come in the form of name-calling, teasing and threats.",
     text2:"Which of the following did the insult contain?",
     text:"Name Calling",
     secondtext:"Threats",
     routeTo:"/pages2/names",
-    routeTo2:"/pages2/threatenverbal"
+    routeTo2:"/pages2/threatenverbal",
+    backto:"/pages2/verbalbullying"
   },
+
   remarks:{
     text1:"Bigoted remarks are making negative references to one’s culture, ethnicity, race, religion, gender, or sexual orientation.",
     text2:"Which of the following did the remark contain?",
     text:"Name Calling",
     secondtext:"Threats",
     routeTo:"/pages2/names",
-    routeTo2:"/pages2/threatenverbal"
+    routeTo2:"/pages2/threatenverbal",
+    backto:"/pages2/verbalbullying"
+
   },
   names:{
     text1:"Name calling can lead to more people joining in or  could even lead to physical bullying if escalated. It best to seek help immediately.",
@@ -149,7 +162,9 @@ const bullying = {
     text:"Yes",
     secondtext:"No",
     routeTo:"/pages2/whodidit",
-    routeTo2:"/pages2/whodidit"
+    routeTo2:"/pages2/whodidit",
+    backto:"/pages2/verbalbullying"
+
   },
   threatenverbal:{
     text1:"Threats can range from minor to major and all of them should be taken seriously. Although most threats do not evolve, they shoud be taken seriously as they are a crime.",
@@ -157,15 +172,18 @@ const bullying = {
     text:"Minor",
     secondtext:"Major (assault)",
     routeTo:"/pages2/whodidit",
-    routeTo2:"/pages2/whodidit"
+    routeTo2:"/pages2/whodidit",
+    backto:"/pages2/verbalbullying"
   },
+
   whodidit:{
     text1:"Who is the person or group that is doing this to you?",
     text2:"What type of threat was it?",
     text:"Classmates",
     secondtext:"Family",
     routeTo:"/resultpage/verbalbullyingschool",
-    routeTo2:"/resultpage/verbalbullyingcanada"
+    routeTo2:"/resultpage/verbalbullyingcanada",
+    backto:"/pages2/verbalbullying"
   },
   //verbalbullying end
 
@@ -177,7 +195,8 @@ const bullying = {
     text:"Physical Hits",
     secondtext:"Stealing",
     routeTo:"/pages2/punch",
-    routeTo2:"/pages2/weapon"
+    routeTo2:"/pages2/weapon",
+    backto:"/victim"
   },
 
   punch:{
@@ -186,7 +205,8 @@ const bullying = {
     text:"I Am Not Injured",
     secondtext:"I am Injured",
     routeTo:"/pages2/nothurt",
-    routeTo2:"/pages2/hurt"
+    routeTo2:"/pages2/hurt",
+    backto:"/pages2/physicalbullying"
   },
 
   nothurt :{
@@ -195,7 +215,8 @@ const bullying = {
     text:"Continue",
     secondtext:"Not Continue",
     routeTo:"/pages2/whohurt",
-    routeTo2:"/pages2/whohurt"
+    routeTo2:"/pages2/whohurt",
+    backto:"/pages2/physicalbullying"
   },
 
   hurt :{
@@ -204,7 +225,8 @@ const bullying = {
     text:"No, There Isn't",
     secondtext:"Yes, There Is",
     routeTo:"/pages2/whohurt",
-    routeTo2:"/pages2/whohurt"
+    routeTo2:"/pages2/whohurt",
+    backto:"/pages2/physicalbullying"
   },
   weapon:{
     text1:"Stealing as aform of bullying is extremely alarming and in some cases, illegal.",
@@ -212,7 +234,8 @@ const bullying = {
     text:"Yes",
     secondtext: "No",
     routeTo:"/pages2/wepthreat",
-    routeTo2:"/pages2/wepassault"
+    routeTo2:"/pages2/wepassault",
+    backto:"/pages2/physicalbullying"
   },
 
   wepthreat:{
@@ -221,7 +244,8 @@ const bullying = {
     text:"Yes, i Am",
     secondtext:"No, I Am Not",
     routeTo:"/pages2/whohurt",
-    routeTo2:"/pages2/whohurt"
+    routeTo2:"/pages2/whohurt",
+    backto:"/pages2/physicalbullying"
   },
 
   wepassault:{
@@ -230,7 +254,8 @@ const bullying = {
     text:"Continue",
     secondtext:"Not Continue",
     routeTo:"/pages2/whohurt",
-    routeTo2:"/pages2/whohurt"
+    routeTo2:"/pages2/whohurt",
+    backto:"/pages2/physicalbullying"
   },
 
   whohurt:{
@@ -239,7 +264,8 @@ const bullying = {
     text:"Students",
     secondtext:"Family",
     routeTo:"/resultpage/weaponstudent",
-    routeTo2:"/resultpage/weaponfamily"
+    routeTo2:"/resultpage/weaponfamily",
+    backto:"/pages2/physicalbullying"
   },
   //physicalbullying end
 }
@@ -253,6 +279,7 @@ export default function Pages2(){
     var but2 = "Text Messaging";
     var link = "/";
     var link2 = "/";
+    var back = "/";
 
 
     //cyberbullying chain
@@ -263,6 +290,7 @@ export default function Pages2(){
         but2 = bullying.cyberbullying.secondtext
         link = bullying.cyberbullying.routeTo
         link2 = bullying.cyberbullying.routeTo2
+        back = bullying.cyberbullying.backto
     }
     if(routing === "socialmedia"){
         big = bullying.socialmedia.text1;
@@ -271,6 +299,7 @@ export default function Pages2(){
         but2 = bullying.socialmedia.secondtext
         link = bullying.socialmedia.routeTo
         link2 = bullying.socialmedia.routeTo2
+        back = bullying.socialmedia.backto
     }
     if(routing === "texting"){
       big = bullying.texting.text1;
@@ -279,6 +308,7 @@ export default function Pages2(){
       but2 = bullying.texting.secondtext
       link = bullying.texting.routeTo
       link2 = bullying.texting.routeTo2
+      back = bullying.texting.backto
   }
     if(routing === "intimidated"){
         big = bullying.intimidated.text1;
@@ -287,6 +317,7 @@ export default function Pages2(){
         but2 = bullying.intimidated.secondtext
         link = bullying.intimidated.routeTo
         link2 = bullying.intimidated.routeTo2
+        back = bullying.intimidated.backto
     }
     if(routing === "rumor"){
       big = bullying.rumor.text1;
@@ -295,12 +326,14 @@ export default function Pages2(){
       but2 = bullying.rumor.secondtext
       link = bullying.rumor.routeTo
       link2 = bullying.rumor.routeTo2
+      back = bullying.rumor.backto
   }
     if(routing === "threatenharm"){
         big = bullying.threatenharm.text1;
         sub = bullying.threatenharm.text2;
         but1 = bullying.threatenharm.text
         but2 = bullying.threatenharm.secondtext
+        back = bullying.threatenharm.backto
     }
     if(routing === "whodid"){
       big = bullying.whodid.text1;
@@ -308,6 +341,7 @@ export default function Pages2(){
       but1 = bullying.whodid.text
       but2 = bullying.whodid.secondtext
       link = bullying.whodid.routeTo
+      back = bullying.whodid.backto
   }
     //cyberbullying end
 
@@ -320,6 +354,7 @@ export default function Pages2(){
       but2 = bullying.verbalbullying.secondtext
       link = bullying.verbalbullying.routeTo
       link2 = bullying.verbalbullying.routeTo2
+      back = bullying.verbalbullying.backto
     }
 
     if(routing === "insults"){
@@ -329,6 +364,7 @@ export default function Pages2(){
       but2 = bullying.insults.secondtext
       link = bullying.insults.routeTo
       link2 = bullying.insults.routeTo2
+      back = bullying.insults.backto
     }
 
     if(routing === "remarks"){
@@ -338,6 +374,7 @@ export default function Pages2(){
       but2 = bullying.remarks.secondtext
       link = bullying.remarks.routeTo
       link2 = bullying.remarks.routeTo2
+      back = bullying.remarks.backto
     }
 
     if(routing === "names"){
@@ -347,6 +384,7 @@ export default function Pages2(){
       but2 = bullying.names.secondtext
       link = bullying.names.routeTo
       link2 = bullying.names.routeTo2
+      back = bullying.names.backto
     }
 
     if(routing === "threatenverbal"){
@@ -356,6 +394,7 @@ export default function Pages2(){
       but2 = bullying.threatenverbal.secondtext
       link = bullying.threatenverbal.routeTo
       link2 = bullying.threatenverbal.routeTo2
+      back = bullying.threatenverbal.backto
     }
     if(routing === "whodidit"){
       big = bullying.whodidit.text1;
@@ -364,6 +403,7 @@ export default function Pages2(){
       but2 = bullying.whodidit.secondtext
       link = bullying.whodidit.routeTo
       link2 = bullying.whodidit.routeTo2
+      back = bullying.whodidit.backto
     }
     //verbalbullying end
 
@@ -376,6 +416,7 @@ export default function Pages2(){
       but2 = bullying.physicalbullying.secondtext
       link = bullying.physicalbullying.routeTo
       link2 = bullying.physicalbullying.routeTo2
+      back = bullying.physicalbullying.backto
     }
 
     if(routing === "punch"){
@@ -385,6 +426,7 @@ export default function Pages2(){
       but2 = bullying.punch.secondtext
       link = bullying.punch.routeTo
       link2 = bullying.punch.routeTo2
+      back = bullying.punch.backto
     }
 
     if(routing === "weapon"){
@@ -394,6 +436,7 @@ export default function Pages2(){
       but2 = bullying.weapon.secondtext
       link = bullying.weapon.routeTo
       link2 = bullying.weapon.routeTo2
+      back = bullying.weapon.backto
     }
 
     if(routing === "hurt"){
@@ -403,6 +446,7 @@ export default function Pages2(){
       but2 = bullying.hurt.secondtext
       link = bullying.hurt.routeTo
       link2 = bullying.hurt.routeTo2
+      back = bullying.hurt.backto
     }
 
     if(routing === "nothurt"){
@@ -412,6 +456,7 @@ export default function Pages2(){
       but2 = bullying.nothurt.secondtext
       link = bullying.nothurt.routeTo
       link2 = bullying.nothurt.routeTo2
+      back = bullying.nothurt.backto
     }
 
     if(routing === "wepthreat"){
@@ -421,6 +466,7 @@ export default function Pages2(){
       but2 = bullying.wepthreat.secondtext
       link = bullying.wepthreat.routeTo
       link2 = bullying.wepthreat.routeTo2
+      back = bullying.wepthreat.backto
     }
 
     if(routing === "wepassault"){
@@ -430,6 +476,7 @@ export default function Pages2(){
       but2 = bullying.wepassault.secondtext
       link = bullying.wepassault.routeTo
       link2 = bullying.wepassault.routeTo2
+      back = bullying.wepassault.backto
     }
 
     if(routing === "whohurt"){
@@ -439,13 +486,14 @@ export default function Pages2(){
       but2 = bullying.whohurt.secondtext
       link = bullying.whohurt.routeTo
       link2 = bullying.whohurt.routeTo2
+      back = bullying.whohurt.backto
     }
     //physical bullying end
 
     return <OuterContainer>
       <Container>
         <Header>
-          <Back top="1vh" left="-20vw"></Back>
+          <Back top="1vh" left="-20vw" routerBack={back}></Back>
           <Circle right="25px"></Circle>
         </Header>
 

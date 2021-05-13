@@ -32,7 +32,7 @@ const Header = styled.div`
   display:flex;
   flex-direction: column;
   position: relative;
-  top: 8vh;
+  top: 9vh;
 `;
 
 const Body = styled.div`
@@ -41,7 +41,7 @@ const Body = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  top: 7vh;
+  top: 8vh;
 `;
 
 const Buttons = styled.div`
@@ -72,10 +72,10 @@ export default function Home() {
         </Body>
 
         <Buttons>
-          <AvatarW height="140px" width="100px" bsize="100px" right="100px"></AvatarW>
-          <Button text="Witnessed" bottom="50px" color="#DC7F9B"  routeTo="/bystander"></Button>
-          <AvatarV bgImg="AvatarV_BigSmileFlip.png" height="140px" width="140px" bsize="140px" left="90px" bottom="50px"></AvatarV>
-          <Button text="Victim" bottom="100px" color="#7CB2E3"  ></Button>
+          <AvatarW height="140px" width="100px" bsize="100px" right="100px" bottom="10px"></AvatarW>
+          <Button text="Witnessed" bottom="60px" color="#DC7F9B"  routeTo="/bystander"></Button>
+          <AvatarV bgImg="AvatarV_BigSmileFlip.png" height="140px" width="140px" bsize="140px" left="90px" bottom="60px"></AvatarV>
+          <Button text="Victim" bottom="110px" color="#7CB2E3"></Button>
         </Buttons>
 
       </Container>

@@ -60,12 +60,12 @@ export default function Home() {
     <OuterContainer>
       <Container>
         <Header>
-          <Back top="1vh" left="-20vw"></Back>
+          <Back top="1vh" left="-20vw" routerBack="/victim"></Back>
           <Circle right="25px"></Circle>
         </Header>
 
         <Body>
-            <img src="cyber.gif"></img>
+            <img src="cyber.gif" width="350px"></img>
         </Body>
 
         <Buttons>

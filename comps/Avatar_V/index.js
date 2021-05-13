@@ -10,6 +10,14 @@ const AvatarInputV = styled.div`
     position: relative;
     left: ${props=>props.left};
     bottom: ${props=>props.bottom};
+    animation-name: opacity;
+    animation-duration: 3s;
+
+    @keyframes opacity{
+        0%   {opacity: 0%;}
+        50%  {opacity: 0%;}
+        100% {opacity: 100%;}
+    }
 `;
 
 const AvatarV = ({

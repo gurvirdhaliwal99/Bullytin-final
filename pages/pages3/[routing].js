@@ -155,7 +155,7 @@ export default function Pages3(){
         <Body>
           <Step bottom="22vh"></Step>
           <Box text1={big} height="125px" width="300px" border="4px solid #7CB2E3" bottom="150px"></Box>
-          <AvatarW height="120px" width="120px" bsize="120px" right="-50px" bottom="120%"></AvatarW>
+          <AvatarW height="120px" width="120px" bsize="120px" right="70px" bottom="160%"></AvatarW>
           <Box2 text2={sub} height="90px" width="300px" border="4px solid #7CB2E3" bottom="26vh"></Box2>
         </Body>
 

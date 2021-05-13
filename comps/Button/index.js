@@ -9,6 +9,7 @@ const ButtonInput = styled.button`
     color:${props=>props.color};
     border-radius: 10px;
     border: lightgrey 3px solid;
+    box-shadow: 0px 5px 4px #262626;
     width: 250px;
     padding: ${props=>props.padding};
     font-size: 25px;
@@ -18,6 +19,14 @@ const ButtonInput = styled.button`
     bottom: ${props=>props.bottom};
     margin-right: ${props=>props.right};
     left: ${props=>props.left};
+
+    animation-name: opacity;
+    animation-duration: 5s;
+
+    @keyframes opacity{
+        0%   {opacity: 0%;}
+        100% {opacity: 100%;}
+    }
 `;
 
 const Button = ({

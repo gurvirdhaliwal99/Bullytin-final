@@ -9,11 +9,19 @@ const TextBox = styled.div`
     width: ${props=>props.width};
     border: ${props=>props.border};
     border-radius: 15px;
+    box-shadow: 0px 4px 6px #262626;
     padding: 0px 10px;
     margin-bottom: 50px;    
     position: relative;
     bottom: ${props=>props.bottom};
     left: ${props=>props.left};
+    animation-name: opacity;
+    animation-duration: 2s;
+
+    @keyframes opacity{
+        0%   {opacity: 0%;}
+        100% {opacity: 100%;}
+    }
 `;
 
 const BoxBody = styled.p`
