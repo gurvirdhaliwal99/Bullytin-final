@@ -20,7 +20,7 @@ const Container = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction: column;
-  background-image: url("BG_Pink.png");
+  background-image: url(/BG_Pink.png);
   background-repeat: no-repeat;
   background-size: 150vh;
   background-color:#DC7F9B;

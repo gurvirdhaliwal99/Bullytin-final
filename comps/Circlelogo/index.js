@@ -5,7 +5,7 @@ import {useRouter} from "next/router";
 const LogoCircle = styled.div`
     display: flex;
     background-color:#e5e5e5;
-    background-image:url("Logo.png");
+    background-image:url(/Logo.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 75px;
