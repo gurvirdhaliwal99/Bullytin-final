@@ -65,7 +65,8 @@ const bullying = {
         routeTo:"/result2page/cyberbullySM",
         routeTo2:"/result2page/cyberbullyTM",
         backto:"/bystander",
-        step2:"Step 2 of 2"
+        step2:"Step 2 of 2",
+        avatar:"/AvatarW_BigSmile.png"
     },
   //cyberbullying end
 
@@ -79,7 +80,8 @@ const bullying = {
     routeTo:"/result2page/verbalbullythreat",
     routeTo2:"/result2page/verbalbullyNC",
     backto:"/bystander",
-    step2:"Step 2 of 2"
+    step2:"Step 2 of 2",
+    avatar:"/AvatarW_Explaining.png"
   },
   //verbalbullying end
 
@@ -93,7 +95,8 @@ const bullying = {
     routeTo:"/result2page/phsyicalpunch",
     routeTo2:"/result2page/phsyicalstealing",
     backto:"/bystander",
-    step2:"Step 2 of 2"
+    step2:"Step 2 of 2",
+    avatar:"/AvatarW_Sus.png"
   },
   //physicalbullying end
 }
@@ -112,6 +115,7 @@ export default function Pages3(){
     var step3 = "";
     var step4 = "";
     var step5 = "";
+    var avatar = "/AvatarW_BigSmile.png";
 
 
     //cyberbullying chain
@@ -124,6 +128,7 @@ export default function Pages3(){
         link2 = bullying.cyberbullying.routeTo2
         back = bullying.cyberbullying.backto
         step2 = bullying.cyberbullying.step2
+        avatar = bullying.cyberbullying.avatar
     }
     //cyberbullying end
 
@@ -138,6 +143,7 @@ export default function Pages3(){
       link2 = bullying.verbalbullying.routeTo2
       back = bullying.verbalbullying.backto
       step2 = bullying.verbalbullying.step2
+      avatar = bullying.verbalbullying.avatar
     }
     //verbalbullying end
 
@@ -152,6 +158,7 @@ export default function Pages3(){
       link2 = bullying.physicalbullying.routeTo2
       back = bullying.physicalbullying.backto
       step2 = bullying.physicalbullying.step2
+      avatar = bullying.physicalbullying.avatar
     }
     //physical bullying end
 
@@ -165,7 +172,7 @@ export default function Pages3(){
         <Body>
           <Step text={step2}bottom="22vh"></Step>
           <Box text1={big} height="125px" width="300px" border="4px solid #7CB2E3" bottom="150px"></Box>
-          <AvatarW height="120px" width="120px" bsize="120px" right="70px" bottom="160%"></AvatarW>
+          <AvatarW height="120px" width="120px" bsize="120px" right="70px" bottom="160%" bgImg={avatar}></AvatarW>
           <Box2 text2={sub} height="90px" width="300px" border="4px solid #7CB2E3" bottom="26vh"></Box2>
         </Body>
 
