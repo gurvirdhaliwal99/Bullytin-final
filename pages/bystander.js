@@ -65,7 +65,7 @@ export default function Home() {
         </Header>
 
         <Body>
-          <Step bottom="22vh"></Step>
+          <Step text="Step 1 of 2"bottom="22vh"></Step>
           <Box text1="Thank you for not being a bystander. The best thing you can do is try to help the person being bullied." height="140px" width="300px" bottom="150px"></Box>
           <AvatarW bgImg="AvatarW_Sus.png" height="140px" width="100px" bsize="100px" right="80%" bottom="120%"></AvatarW>
           <Box2 text2="What type of bullying did you witness?" height="90px" width="300px" bottom="26vh"></Box2>

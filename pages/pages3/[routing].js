@@ -64,7 +64,8 @@ const bullying = {
         secondtext:"Text Messages",
         routeTo:"/result2page/cyberbullySM",
         routeTo2:"/result2page/cyberbullyTM",
-        backto:"/bystander"
+        backto:"/bystander",
+        step2:"Step 2 of 2"
     },
   //cyberbullying end
 
@@ -77,7 +78,8 @@ const bullying = {
     secondtext:"Name Calling",
     routeTo:"/result2page/verbalbullythreat",
     routeTo2:"/result2page/verbalbullyNC",
-    backto:"/bystander"
+    backto:"/bystander",
+    step2:"Step 2 of 2"
   },
   //verbalbullying end
 
@@ -90,7 +92,8 @@ const bullying = {
     secondtext:"Stealing",
     routeTo:"/result2page/phsyicalpunch",
     routeTo2:"/result2page/phsyicalstealing",
-    backto:"/bystander"
+    backto:"/bystander",
+    step2:"Step 2 of 2"
   },
   //physicalbullying end
 }
@@ -105,6 +108,10 @@ export default function Pages3(){
     var link = "/";
     var link2 = "/";
     var back = "/";
+    var step2 = "";
+    var step3 = "";
+    var step4 = "";
+    var step5 = "";
 
 
     //cyberbullying chain
@@ -116,6 +123,7 @@ export default function Pages3(){
         link = bullying.cyberbullying.routeTo
         link2 = bullying.cyberbullying.routeTo2
         back = bullying.cyberbullying.backto
+        step2 = bullying.cyberbullying.step2
     }
     //cyberbullying end
 
@@ -129,6 +137,7 @@ export default function Pages3(){
       link = bullying.verbalbullying.routeTo
       link2 = bullying.verbalbullying.routeTo2
       back = bullying.verbalbullying.backto
+      step2 = bullying.verbalbullying.step2
     }
     //verbalbullying end
 
@@ -142,6 +151,7 @@ export default function Pages3(){
       link = bullying.physicalbullying.routeTo
       link2 = bullying.physicalbullying.routeTo2
       back = bullying.physicalbullying.backto
+      step2 = bullying.physicalbullying.step2
     }
     //physical bullying end
 
@@ -153,7 +163,7 @@ export default function Pages3(){
         </Header>
 
         <Body>
-          <Step bottom="22vh"></Step>
+          <Step text={step2}bottom="22vh"></Step>
           <Box text1={big} height="125px" width="300px" border="4px solid #7CB2E3" bottom="150px"></Box>
           <AvatarW height="120px" width="120px" bsize="120px" right="70px" bottom="160%"></AvatarW>
           <Box2 text2={sub} height="90px" width="300px" border="4px solid #7CB2E3" bottom="26vh"></Box2>
