@@ -4,10 +4,7 @@ import {useRouter} from "next/router";
 
 const BackButton = styled.div`
     display: flex;
-    background-image:url("back.png");
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60px, 60px;
     height: 60px;
     width: 60px;
     position: relative;
