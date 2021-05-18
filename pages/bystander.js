@@ -43,7 +43,7 @@ const Body = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  top: 18vh;
+  top: 22vh;
 `;
 
 const Buttons = styled.div`
@@ -66,14 +66,14 @@ export default function Home() {
 
         <Body>
           <Step text="Step 1 of 2"bottom="22vh"></Step>
-          <Box text1="Thank you for not being a bystander. The best thing you can do is try to help the person being bullied." height="140px" width="300px" bottom="120px"></Box>
-          <AvatarW bgImg="AvatarW_Sus.png" height="140px" width="100px" bsize="100px" right="80%" bottom="115px"></AvatarW>
-          <Box2 text2="What type of bullying did you see?" height="90px" width="300px" bottom="28vh"></Box2>
+          <Box text1="Thank you for not being a bystander. The best thing you can do is try to help the person being bullied." height="140px" width="300px" bottom="150px"></Box>
+          <AvatarW bgImg="AvatarW_Sus.png" height="140px" width="100px" bsize="100px" right="80%" bottom="120%"></AvatarW>
+          <Box2 text2="What type of bullying did you witness?" height="90px" width="300px" bottom="26vh"></Box2>
         </Body>
 
         <Buttons>
-          <Button bottom="4vh" text="Cyber Bullying" routeTo="pages3/cyberbullying"></Button>
-          <Button bottom="3vh" text="Verbal Bullying" routeTo="pages3/verbalbullying"></Button>
+          <Button bottom="2vh" text="Cyber Bullying" routeTo="pages3/cyberbullying"></Button>
+          <Button bottom="2vh" text="Verbal Bullying" routeTo="pages3/verbalbullying"></Button>
           <Button bottom="2vh" text="Physical Bullying" routeTo="pages3/physicalbullying"></Button>
 
         </Buttons>
