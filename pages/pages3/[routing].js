@@ -166,7 +166,7 @@ export default function Pages3(){
       <Container>
         <Header>
           <Back top="1vh" left="-20vw" routerBack={back}></Back>
-          <Circle right="30px"></Circle>
+          <Circle right="25px"></Circle>
         </Header>
 
         <Body>

@@ -21,7 +21,7 @@ const Back = ({
     const router = useRouter();
     return <div>
         <BackButton onClick={()=>router.push(routerBack)} top={top} left={left}>
-            <img src="../newback.png"/>
+            <img src="../back.png"/>
         </BackButton>
     </div>
 }

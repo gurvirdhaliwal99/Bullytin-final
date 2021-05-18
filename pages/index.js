@@ -79,7 +79,7 @@ export default function Home() {
           <AvatarW height="140px" width="95px" bsize="95px" right="100px" bottom="-80px"></AvatarW>
           <AvatarV bgImg="AvatarV_BigSmileFlip.png" height="140px" width="140px" bsize="140px" left="90px" bottom="55px"></AvatarV>
           <Button text="Witnessed" color="#DC7F9B" bottom="110px" routeTo="/bystander"></Button>
-          <Button text="Victim" bottom="90px" color="#7CB2E3"></Button>
+          <Button text="Victim" bottom="80px" color="#7CB2E3"></Button>
         </Buttons>
 
       </Container>
