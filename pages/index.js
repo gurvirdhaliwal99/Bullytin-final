@@ -13,11 +13,6 @@ const OuterContainer = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
-  margin: 0px;
-  padding: 0px;
-  background-color:#DC7F9B;
-  width: 375px;
-  height: 812px;
 `;
 
 const Container = styled.div`
@@ -26,12 +21,11 @@ const Container = styled.div`
   align-items:center;
   flex-direction: column;
   background-image: url(/BG_Pink.png);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 150vh;
   background-color:#DC7F9B;
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
+  height: 100vh;
+  width: 100vw;
 `;  
 
 const Header = styled.div`
@@ -74,14 +68,14 @@ export default function Home() {
 
         <Body>
           <Box text1="We are here to help! Our goal is to provide assistance for your unique bullying experience." height="125px" width="300px" bottom="-20px"></Box>
-          <Box2 text2="Have you recently witnessed or been a victim of bullying?" height="90px" width="300px" bottom="-30px"></Box2>
+          <Box2 text2="Have you recently witnessed or have been a victim of bullying?" height="90px" width="300px"></Box2>
         </Body>
 
         <Buttons>
-          <AvatarW height="140px" width="95px" bsize="95px" right="100px" bottom="-80px"></AvatarW>
-          <AvatarV bgImg="AvatarV_BigSmileFlip.png" height="140px" width="140px" bsize="140px" left="90px" bottom="55px"></AvatarV>
-          <Button text="Witnessed" color="#DC7F9B" bottom="110px" routeTo="/bystander"></Button>
-          <Button text="Victim" bottom="80px" color="#7CB2E3"></Button>
+          <AvatarW height="140px" width="100px" bsize="100px" right="100px" bottom="10px"></AvatarW>
+          <Button text="Witnessed" bottom="60px" color="#DC7F9B"  routeTo="/bystander"></Button>
+          <AvatarV bgImg="AvatarV_BigSmileFlip.png" height="140px" width="140px" bsize="140px" left="90px" bottom="60px"></AvatarV>
+          <Button text="Victim" bottom="110px" color="#7CB2E3"></Button>
         </Buttons>
 
       </Container>

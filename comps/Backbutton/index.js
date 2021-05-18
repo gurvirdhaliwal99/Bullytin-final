@@ -4,8 +4,9 @@ import {useRouter} from "next/router";
 
 const BackButton = styled.div`
     display: flex;
-    width: 60px;
+    background-position: center;
     height: 60px;
+    width: 60px;
     position: relative;
     left: ${props=>props.left};
     top: ${props=>props.top};

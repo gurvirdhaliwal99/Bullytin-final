@@ -10,7 +10,8 @@ const TextBox = styled.div`
     border: ${props=>props.border};
     border-radius: 15px;
     box-shadow: 0px 4px 6px #262626;
-    padding: 0px 10px;   
+    padding: 0px 10px;
+    margin-bottom: 50px;    
     position: relative;
     bottom: ${props=>props.bottom};
     left: ${props=>props.left};
