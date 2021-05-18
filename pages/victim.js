@@ -52,7 +52,7 @@ const Buttons = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  bottom: -0.4vh;
+  bottom: -5vh;
 `;
 
 export default function Home() {

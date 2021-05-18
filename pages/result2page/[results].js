@@ -52,7 +52,7 @@ const Buttons = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  bottom: -0.4vh;
+  bottom: -9vh;
 `;
 
 const resultsoption = {
@@ -173,7 +173,7 @@ export default function Results(){
 
         <Body>
           <Box text1={big} height="20vh" width="300px" border="4px solid #DC7F9B" bottom="15vh"></Box>
-          <Box2 text2={sub} height="20vh" width="300px" border="4px solid #DC7F9B" bottom="15vh"></Box2>
+          <Box2 text2={sub} height="20vh" width="300px" border="4px solid #DC7F9B" bottom="12vh"></Box2>
         </Body>
 
         <Buttons>

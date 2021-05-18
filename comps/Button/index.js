@@ -10,14 +10,12 @@ const ButtonInput = styled.button`
     border-radius: 10px;
     border: lightgrey 3px solid;
     box-shadow: 0px 5px 4px #262626;
-    width: 250px;
+    width: 225px;
     padding: ${props=>props.padding};
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
-    margin:5px;
     position: relative;
     bottom: ${props=>props.bottom};
-    margin-right: ${props=>props.right};
     left: ${props=>props.left};
 
     animation-name: opacity;
@@ -33,15 +31,14 @@ const Button = ({
     text="Test Button",
     secondtext="",
     color="white",
-    padding="10px 0px",
+    padding="8px 0px",
     bottom="0px",
     left="0px",
-    right="0px",
     routeTo="/victim"
 }) => {
     const router = useRouter();
     return <div>
-        <ButtonInput color={color} padding={padding} bottom={bottom} right={right} left={left} onClick={()=>router.push(routeTo)}>
+        <ButtonInput color={color} padding={padding} bottom={bottom} left={left} onClick={()=>router.push(routeTo)}>
             {text}{secondtext}
         </ButtonInput>
     </div>
