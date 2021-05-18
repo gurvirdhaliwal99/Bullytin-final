@@ -16,8 +16,6 @@ const OuterContainer = styled.div`
   margin: 0px;
   padding: 0px;
   background-color:#DC7F9B;
-  width: 375px;
-  height: 812px;
 `;
 
 const Container = styled.div`
@@ -38,7 +36,7 @@ const Header = styled.div`
   display:flex;
   flex-direction: column;
   position: relative;
-  top: 9vh;
+  top: 5vh;
 `;
 
 const Body = styled.div`

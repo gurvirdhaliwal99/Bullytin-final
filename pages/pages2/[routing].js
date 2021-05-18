@@ -52,7 +52,7 @@ const Buttons = styled.div`
   align-items:center;
   flex-direction: column;
   position: relative;
-  bottom: -0.4vh;
+  bottom: -5vh;
 `;
 
 const bullying = {
@@ -598,16 +598,14 @@ export default function Pages2(){
 
         <Body>
           <Step text={step} bottom="22vh"></Step>
-          <Box text1={big} height="125px" width="300px" border="4px solid #DC7F9B" bottom="150px"></Box>
-          <AvatarV height="140px" width="160px" bsize="160px" left="-50%" bottom="120%" bgImg={avatar}></AvatarV>
+          <Box text1={big} height="125px" width="300px" border="4px solid #DC7F9B" bottom="120px"></Box>
+          <AvatarV height="140px" width="160px" bsize="160px" left="-50%" bottom="110px" bgImg={avatar}></AvatarV>
           <Box2 text2={sub} height="90px" width="300px" border="4px solid #DC7F9B" bottom="26vh"></Box2>
         </Body>
 
         <Buttons>
-          <Button text={but1} bottom="2vh" routeTo={link}></Button>
+          <Button text={but1} bottom="3vh" routeTo={link}></Button>
           <Button text={but2} bottom="2vh"routeTo={link2}></Button>
-          
-
         </Buttons>
       </Container>
     </OuterContainer>
