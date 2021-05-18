@@ -66,7 +66,7 @@ const bullying = {
         routeTo2:"/result2page/cyberbullyTM",
         backto:"/bystander",
         step2:"Step 2 of 2",
-        avatar:"/AvatarW_BigSmile.png"
+        avatar:"/AvatarW_Concerned2.png"
     },
   //cyberbullying end
 
@@ -81,7 +81,7 @@ const bullying = {
     routeTo2:"/result2page/verbalbullyNC",
     backto:"/bystander",
     step2:"Step 2 of 2",
-    avatar:"/AvatarW_Explaining.png"
+    avatar:"/AvatarW_Concerned.png"
   },
   //verbalbullying end
 

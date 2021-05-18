@@ -66,7 +66,7 @@ const bullying = {
         routeTo2:"/pages2/texting",
         backto:"/victim",
         step2:"Step 2 of 5",
-        avatar:"/AvatarV_BigSmile.png"
+        avatar:"/AvatarV_Sus.png"
     },
 
     socialmedia:{
@@ -78,7 +78,7 @@ const bullying = {
         routeTo2:"/pages2/rumor",
         backto:"/pages2/cyberbullying",
         step3:"Step 3 of 5",
-        avatar:"/AvatarV_BigSmile.png"
+        avatar:"/AvatarV_Concerned.png"
     },
 
     texting:{
@@ -90,7 +90,7 @@ const bullying = {
       routeTo2:"/pages2/rumor",
       backto:"/pages2/cyberbullying",
       step3:"Step 3 of 5",
-      avatar:"/AvatarV_BigSmile.png"
+      avatar:"/AvatarV_Concerned2.png"
     },
 
     intimidated:{
@@ -102,7 +102,7 @@ const bullying = {
         routeTo2:"/pages2/whodid",
         backto:"/pages2/cyberbullying",
         step4:"Step 4 of 5",
-        avatar:"/AvatarV_BigSmile.png"
+        avatar:"/AvatarV_Explaining.png"
     },
 
     rumor:{
@@ -114,7 +114,7 @@ const bullying = {
       routeTo2:"/pages2/whodid",
       backto:"/pages2/cyberbullying",
       step4:"Step 4 of 5",
-      avatar:"/AvatarV_BigSmile.png"
+      avatar:"/AvatarV_Explaining.png"
     },
 
     threatenharm:{
@@ -126,7 +126,7 @@ const bullying = {
         routeTo2:"/resultpage/cyberbullypolice",
         backto:"/pages2/cyberbullying",
         step5:"Step 5 of 5",
-        avatar:"/AvatarV_BigSmile.png"
+        avatar:"/AvatarV_Determined.png"
     },
 
     whodid:{
@@ -138,7 +138,7 @@ const bullying = {
       routeTo2:"/resultpage/cyberbullypolice",
       backto:"/pages2/cyberbullying",
       step5:"Step 5 of 5",
-      avatar:"/AvatarV_BigSmile.png"
+      avatar:"/AvatarV_Determined.png"
 
   },
   //cyberbullying end
@@ -154,7 +154,7 @@ const bullying = {
     routeTo2:"/pages2/remarks",
     backto:"/victim",
     step2:"Step 2 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Sus.png"
   },
 
   insults:{
@@ -166,7 +166,7 @@ const bullying = {
     routeTo2:"/pages2/threatenverbal",
     backto:"/pages2/verbalbullying",
     step3:"Step 3 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Concerned.png"
   },
 
   remarks:{
@@ -178,7 +178,7 @@ const bullying = {
     routeTo2:"/pages2/threatenverbal",
     backto:"/pages2/verbalbullying",
     step3:"Step 3 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Concerned2.png"
 
   },
 
@@ -191,7 +191,7 @@ const bullying = {
     routeTo2:"/pages2/whodidit",
     backto:"/pages2/verbalbullying",
     step4:"Step 4 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Explaining.png"
   },
 
   threatenverbal:{
@@ -203,7 +203,7 @@ const bullying = {
     routeTo2:"/pages2/whodidit",
     backto:"/pages2/verbalbullying",
     step4:"Step 4 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Explaining.png"
   },
 
   whodidit:{
@@ -215,7 +215,7 @@ const bullying = {
     routeTo2:"/resultpage/verbalbullyingcanada",
     backto:"/pages2/verbalbullying",
     step5:"Step 5 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Determined.png"
   },
   //verbalbullying end
 
@@ -230,7 +230,7 @@ const bullying = {
     routeTo2:"/pages2/weapon",
     backto:"/victim",
     step2:"Step 2 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Sus.png"
   },
 
   punch:{
@@ -242,7 +242,7 @@ const bullying = {
     routeTo2:"/pages2/hurt",
     backto:"/pages2/physicalbullying",
     step3:"Step 3 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Concerned.png"
   },
 
   nothurt :{
@@ -254,7 +254,7 @@ const bullying = {
     routeTo2:"/pages2/whohurt",
     backto:"/pages2/physicalbullying",
     step4:"Step 4 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Concerned2.png"
   },
 
   hurt :{
@@ -266,7 +266,7 @@ const bullying = {
     routeTo2:"/pages2/whohurt",
     backto:"/pages2/physicalbullying",
     step4:"Step 4 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Explaining.png"
   },
   weapon:{
     text1:"Stealing as a form of bullying is extremely alarming and in some cases, illegal.",
@@ -277,7 +277,7 @@ const bullying = {
     routeTo2:"/pages2/wepassault",
     backto:"/pages2/physicalbullying",
     step3:"Step 3 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Concerned2.png"
   },
 
   wepthreat:{
@@ -289,7 +289,7 @@ const bullying = {
     routeTo2:"/pages2/whohurt",
     backto:"/pages2/physicalbullying",
     step4:"Step 4 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Concerned.png"
   },
 
   wepassault:{
@@ -301,7 +301,7 @@ const bullying = {
     routeTo2:"/pages2/whohurt",
     backto:"/pages2/physicalbullying",
     step4:"Step 4 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Explaining.png"
   },
 
   whohurt:{
@@ -313,7 +313,7 @@ const bullying = {
     routeTo2:"/resultpage/weaponfamily",
     backto:"/pages2/physicalbullying",
     step5:"Step 5 of 5",
-    avatar:"/AvatarV_BigSmile.png"
+    avatar:"/AvatarV_Determined.png"
   },
   //physicalbullying end
 }
