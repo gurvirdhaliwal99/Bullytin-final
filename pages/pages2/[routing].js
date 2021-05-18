@@ -593,7 +593,7 @@ export default function Pages2(){
       <Container>
         <Header>
           <Back top="1vh" left="-20vw" routerBack={back}></Back>
-          <Circle right="25px"></Circle>
+          <Circle right="30px"></Circle>
         </Header>
 
         <Body>
