@@ -252,7 +252,7 @@ const bullying = {
     secondtext:"Not Continue",
     routeTo:"/pages2/whohurt",
     routeTo2:"/pages2/whohurt",
-    backto:"/pages2/physicalbullying",
+    backto:"/pages2/punch",
     step:"Step 4 of 5",
     avatar:"/AvatarV_Concerned2.png"
   },
