@@ -65,7 +65,7 @@ const bullying = {
         routeTo:"/pages2/socialmedia",
         routeTo2:"/pages2/texting",
         backto:"/victim",
-        step2:"Step 2 of 5",
+        step:"Step 2 of 5",
         avatar:"/AvatarV_Sus.png"
     },
 
@@ -77,7 +77,7 @@ const bullying = {
         routeTo:"/pages2/intimidated",
         routeTo2:"/pages2/rumor",
         backto:"/pages2/cyberbullying",
-        step3:"Step 3 of 5",
+        step:"Step 3 of 5",
         avatar:"/AvatarV_Concerned.png"
     },
 
@@ -89,7 +89,7 @@ const bullying = {
       routeTo:"/pages2/intimidated",
       routeTo2:"/pages2/rumor",
       backto:"/pages2/cyberbullying",
-      step3:"Step 3 of 5",
+      step:"Step 3 of 5",
       avatar:"/AvatarV_Concerned2.png"
     },
 
@@ -153,7 +153,7 @@ const bullying = {
     routeTo:"/pages2/insults",
     routeTo2:"/pages2/remarks",
     backto:"/victim",
-    step2:"Step 2 of 5",
+    step:"Step 2 of 5",
     avatar:"/AvatarV_Sus.png"
   },
 
@@ -165,7 +165,7 @@ const bullying = {
     routeTo:"/pages2/names",
     routeTo2:"/pages2/threatenverbal",
     backto:"/pages2/verbalbullying",
-    step3:"Step 3 of 5",
+    step:"Step 3 of 5",
     avatar:"/AvatarV_Concerned.png"
   },
 
@@ -177,7 +177,7 @@ const bullying = {
     routeTo:"/pages2/names",
     routeTo2:"/pages2/threatenverbal",
     backto:"/pages2/verbalbullying",
-    step3:"Step 3 of 5",
+    step:"Step 3 of 5",
     avatar:"/AvatarV_Concerned2.png"
 
   },
@@ -229,7 +229,7 @@ const bullying = {
     routeTo:"/pages2/punch",
     routeTo2:"/pages2/weapon",
     backto:"/victim",
-    step2:"Step 2 of 5",
+    step:"Step 2 of 5",
     avatar:"/AvatarV_Sus.png"
   },
 
@@ -241,7 +241,7 @@ const bullying = {
     routeTo:"/pages2/nothurt",
     routeTo2:"/pages2/hurt",
     backto:"/pages2/physicalbullying",
-    step3:"Step 3 of 5",
+    step:"Step 3 of 5",
     avatar:"/AvatarV_Concerned.png"
   },
 
@@ -276,7 +276,7 @@ const bullying = {
     routeTo:"/pages2/wepthreat",
     routeTo2:"/pages2/wepassault",
     backto:"/pages2/physicalbullying",
-    step3:"Step 3 of 5",
+    step:"Step 3 of 5",
     avatar:"/AvatarV_Concerned2.png"
   },
 
@@ -328,10 +328,7 @@ export default function Pages2(){
     var link = "/";
     var link2 = "/";
     var back = "/";
-    var step2 = "";
-    var step3 = "";
-    var step4 = "";
-    var step5 = "";
+    var step = "";
     var avatar = "";
 
 
@@ -344,7 +341,7 @@ export default function Pages2(){
         link = bullying.cyberbullying.routeTo
         link2 = bullying.cyberbullying.routeTo2
         back = bullying.cyberbullying.backto
-        step2 = bullying.cyberbullying.step2
+        step = bullying.cyberbullying.step
         avatar = bullying.cyberbullying.avatar
     }
 
@@ -356,7 +353,7 @@ export default function Pages2(){
         link = bullying.socialmedia.routeTo
         link2 = bullying.socialmedia.routeTo2
         back = bullying.socialmedia.backto
-        step3 = bullying.socialmedia.step3
+        step = bullying.socialmedia.step
         avatar = bullying.socialmedia.avatar
     }
 
@@ -368,7 +365,7 @@ export default function Pages2(){
       link = bullying.texting.routeTo
       link2 = bullying.texting.routeTo2
       back = bullying.texting.backto
-      step3 = bullying.texting.step3
+      step = bullying.texting.step
       avatar = bullying.texting.avatar
     }
 
@@ -380,7 +377,7 @@ export default function Pages2(){
         link = bullying.intimidated.routeTo
         link2 = bullying.intimidated.routeTo2
         back = bullying.intimidated.backto
-        step4 = bullying.intimidated.step4
+        step = bullying.intimidated.step
         avatar = bullying.intimidated.avatar
     }
     
@@ -392,7 +389,7 @@ export default function Pages2(){
       link = bullying.rumor.routeTo
       link2 = bullying.rumor.routeTo2
       back = bullying.rumor.backto
-      step4 = bullying.rumor.step4
+      step = bullying.rumor.step
       avatar = bullying.rumor.avatar
     }
 
@@ -402,7 +399,7 @@ export default function Pages2(){
         but1 = bullying.threatenharm.text
         but2 = bullying.threatenharm.secondtext
         back = bullying.threatenharm.backto
-        step5 = bullying.threatenharm.step5
+        step = bullying.threatenharm.step
         avatar = bullying.threatenharm.avatar
     }
 
@@ -413,7 +410,7 @@ export default function Pages2(){
       but2 = bullying.whodid.secondtext
       link = bullying.whodid.routeTo
       back = bullying.whodid.backto
-      step5 = bullying.whodid.step5
+      step = bullying.whodid.step
       avatar = bullying.whodid.avatar
     }
     //cyberbullying end
@@ -428,7 +425,7 @@ export default function Pages2(){
       link = bullying.verbalbullying.routeTo
       link2 = bullying.verbalbullying.routeTo2
       back = bullying.verbalbullying.backto
-      step2 = bullying.verbalbullying.step2
+      step = bullying.verbalbullying.step
       avatar = bullying.verbalbullying.avatar
     }
 
@@ -440,7 +437,7 @@ export default function Pages2(){
       link = bullying.insults.routeTo
       link2 = bullying.insults.routeTo2
       back = bullying.insults.backto
-      step3 = bullying.insults.step3
+      step = bullying.insults.step
       avatar = bullying.insults.avatar
     }
 
@@ -452,7 +449,7 @@ export default function Pages2(){
       link = bullying.remarks.routeTo
       link2 = bullying.remarks.routeTo2
       back = bullying.remarks.backto
-      step3 = bullying.remarks.step3
+      step = bullying.remarks.step
       avatar = bullying.remarks.avatar
     }
 
@@ -464,7 +461,7 @@ export default function Pages2(){
       link = bullying.names.routeTo
       link2 = bullying.names.routeTo2
       back = bullying.names.backto
-      step4 = bullying.names.step4
+      step = bullying.names.step
       avatar = bullying.names.avatar
     }
 
@@ -476,7 +473,7 @@ export default function Pages2(){
       link = bullying.threatenverbal.routeTo
       link2 = bullying.threatenverbal.routeTo2
       back = bullying.threatenverbal.backto
-      step4 = bullying.names.step4
+      step = bullying.names.step
       avatar = bullying.threatenverbal.avatar
     }
 
@@ -488,7 +485,7 @@ export default function Pages2(){
       link = bullying.whodidit.routeTo
       link2 = bullying.whodidit.routeTo2
       back = bullying.whodidit.backto
-      step5 = bullying.whodidit.step5
+      step = bullying.whodidit.step
       avatar = bullying.whodidit.avatar
     }
     //verbalbullying end
@@ -503,7 +500,7 @@ export default function Pages2(){
       link = bullying.physicalbullying.routeTo
       link2 = bullying.physicalbullying.routeTo2
       back = bullying.physicalbullying.backto
-      step2 = bullying.physicalbullying.step2
+      step = bullying.physicalbullying.step
       avatar = bullying.physicalbullying.avatar
     }
 
@@ -515,7 +512,7 @@ export default function Pages2(){
       link = bullying.punch.routeTo
       link2 = bullying.punch.routeTo2
       back = bullying.punch.backto
-      step3 = bullying.punch.step3
+      step = bullying.punch.step
       avatar = bullying.punch.avatar
     }
 
@@ -527,7 +524,7 @@ export default function Pages2(){
       link = bullying.weapon.routeTo
       link2 = bullying.weapon.routeTo2
       back = bullying.weapon.backto
-      step3 = bullying.weapon.step3
+      step = bullying.weapon.step
       avatar = bullying.weapon.avatar
     }
 
@@ -539,7 +536,7 @@ export default function Pages2(){
       link = bullying.hurt.routeTo
       link2 = bullying.hurt.routeTo2
       back = bullying.hurt.backto
-      step4 = bullying.hurt.step4
+      step = bullying.hurt.step
       avatar = bullying.hurt.avatar
     }
 
@@ -551,7 +548,7 @@ export default function Pages2(){
       link = bullying.nothurt.routeTo
       link2 = bullying.nothurt.routeTo2
       back = bullying.nothurt.backto
-      step4 = bullying.nothurt.step4
+      step = bullying.nothurt.step
       avatar = bullying.nothurt.avatar
     }
 
@@ -563,7 +560,7 @@ export default function Pages2(){
       link = bullying.wepthreat.routeTo
       link2 = bullying.wepthreat.routeTo2
       back = bullying.wepthreat.backto
-      step4 = bullying.wepthreat.step4
+      step = bullying.wepthreat.step
       avatar = bullying.wepthreat.avatar
     }
 
@@ -575,7 +572,7 @@ export default function Pages2(){
       link = bullying.wepassault.routeTo
       link2 = bullying.wepassault.routeTo2
       back = bullying.wepassault.backto
-      step4 = bullying.wepassault.step4
+      step = bullying.wepassault.step
       avatar = bullying.wepassault.avatar
     }
 
@@ -587,7 +584,7 @@ export default function Pages2(){
       link = bullying.whohurt.routeTo
       link2 = bullying.whohurt.routeTo2
       back = bullying.whohurt.backto
-      step5 = bullying.whohurt.step5
+      step = bullying.whohurt.step
       avatar = bullying.whohurt.avatar
     }
     //physical bullying end
@@ -596,14 +593,11 @@ export default function Pages2(){
       <Container>
         <Header>
           <Back top="1vh" left="-20vw" routerBack={back}></Back>
-          <Circle right="25px"></Circle>
+          <Circle right="30px"></Circle>
         </Header>
 
         <Body>
-          <Step text={step2} bottom="22vh"></Step>
-          <Step text={step3} bottom="22vh"></Step>
-          <Step text={step4} bottom="22vh"></Step>
-          <Step text={step5} bottom="35vh"></Step>
+          <Step text={step} bottom="22vh"></Step>
           <Box text1={big} height="125px" width="300px" border="4px solid #DC7F9B" bottom="150px"></Box>
           <AvatarV height="140px" width="160px" bsize="160px" left="-50%" bottom="120%" bgImg={avatar}></AvatarV>
           <Box2 text2={sub} height="90px" width="300px" border="4px solid #DC7F9B" bottom="26vh"></Box2>
