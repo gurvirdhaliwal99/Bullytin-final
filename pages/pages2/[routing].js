@@ -100,7 +100,7 @@ const bullying = {
         secondtext:"Blackmail",
         routeTo:"/pages2/whodid",
         routeTo2:"/pages2/whodid",
-        backto:"/pages2/cyberbullying",
+        backto:"/pages2/socialmedia",
         step4:"Step 4 of 5",
         avatar:"/AvatarV_Explaining.png"
     },
@@ -112,7 +112,7 @@ const bullying = {
       secondtext:"Fake Account",
       routeTo:"/pages2/whodid",
       routeTo2:"/pages2/whodid",
-      backto:"/pages2/cyberbullying",
+      backto:"/pages2/texting",
       step4:"Step 4 of 5",
       avatar:"/AvatarV_Explaining.png"
     },
@@ -124,7 +124,7 @@ const bullying = {
         secondtext:"Unknown Trolls",
         routeTo:"/resultpage/cyberbullyclassmates",
         routeTo2:"/resultpage/cyberbullypolice",
-        backto:"/pages2/cyberbullying",
+        backto:"/pages2/intimidated",
         step5:"Step 5 of 5",
         avatar:"/AvatarV_Determined.png"
     },
@@ -136,7 +136,7 @@ const bullying = {
       secondtext:"Unknown Trolls",
       routeTo:"/resultpage/cyberbullyclassmates",
       routeTo2:"/resultpage/cyberbullypolice",
-      backto:"/pages2/cyberbullying",
+      backto:"/pages2/rumor",
       step5:"Step 5 of 5",
       avatar:"/AvatarV_Determined.png"
 
@@ -189,7 +189,7 @@ const bullying = {
     secondtext:"No",
     routeTo:"/pages2/whodidit",
     routeTo2:"/pages2/whodidit",
-    backto:"/pages2/verbalbullying",
+    backto:"/pages2/insults",
     step4:"Step 4 of 5",
     avatar:"/AvatarV_Explaining.png"
   },
@@ -201,7 +201,7 @@ const bullying = {
     secondtext:"Major (assault)",
     routeTo:"/pages2/whodidit",
     routeTo2:"/pages2/whodidit",
-    backto:"/pages2/verbalbullying",
+    backto:"/pages2/remarks",
     step4:"Step 4 of 5",
     avatar:"/AvatarV_Explaining.png"
   },
@@ -213,7 +213,7 @@ const bullying = {
     secondtext:"Family",
     routeTo:"/resultpage/verbalbullyingschool",
     routeTo2:"/resultpage/verbalbullyingcanada",
-    backto:"/pages2/verbalbullying",
+    backto:"/pages2/names",
     step5:"Step 5 of 5",
     avatar:"/AvatarV_Determined.png"
   },
@@ -252,7 +252,7 @@ const bullying = {
     secondtext:"Not Continue",
     routeTo:"/pages2/whohurt",
     routeTo2:"/pages2/whohurt",
-    backto:"/pages2/physicalbullying",
+    backto:"/pages2/punch",
     step4:"Step 4 of 5",
     avatar:"/AvatarV_Concerned2.png"
   },
@@ -264,7 +264,7 @@ const bullying = {
     secondtext:"Yes, There Is",
     routeTo:"/pages2/whohurt",
     routeTo2:"/pages2/whohurt",
-    backto:"/pages2/physicalbullying",
+    backto:"/pages2/punch",
     step4:"Step 4 of 5",
     avatar:"/AvatarV_Explaining.png"
   },
@@ -287,7 +287,7 @@ const bullying = {
     secondtext:"No, I Am Not",
     routeTo:"/pages2/whohurt",
     routeTo2:"/pages2/whohurt",
-    backto:"/pages2/physicalbullying",
+    backto:"/pages2/weapon",
     step4:"Step 4 of 5",
     avatar:"/AvatarV_Concerned.png"
   },
@@ -299,7 +299,7 @@ const bullying = {
     secondtext:"Not Continue",
     routeTo:"/pages2/whohurt",
     routeTo2:"/pages2/whohurt",
-    backto:"/pages2/physicalbullying",
+    backto:"/pages2/weapon",
     step4:"Step 4 of 5",
     avatar:"/AvatarV_Explaining.png"
   },
@@ -311,7 +311,7 @@ const bullying = {
     secondtext:"Family",
     routeTo:"/resultpage/weaponstudent",
     routeTo2:"/resultpage/weaponfamily",
-    backto:"/pages2/physicalbullying",
+    backto:"/pages2/wepassault",
     step5:"Step 5 of 5",
     avatar:"/AvatarV_Determined.png"
   },
