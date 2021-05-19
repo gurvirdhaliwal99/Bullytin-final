@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from "next/router";
 import {IoArrowBackCircleOutline} from 'react-icons/io5';
+
 const BackButton = styled.div`
     display: flex;
     background-position: center;
